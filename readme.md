@@ -26,7 +26,7 @@ Following UI Widgets are supported -
 
 | Widgets | Features |
 |---------|------------|
-| Button | Dimention, Alpha, Text Color, Text size, Text Style, Padding, Button states |
+| Button | Dimension, Alpha, Text Color, Text size, Text Style, Padding, Button states |
 | TextView | Gravity, Ellipsize, Text size, Text Style, System Fonts | 
 | EditText | Keyboard type - Plain, Password, E-Mail, Phone, Time, Number, Action button text | 
 
@@ -66,7 +66,7 @@ Screen shot of EditText with email keyboard -
 <img src="/Visuals/UI-Demo_EditText-Email.jpg" alt="EditText email keyboard"/>
 
 Screen shot of EditText with phone dialer keyboard - 
-<img src="/Visuals/UI-Demo_EditText-Phone.jpg" alt="EditText phone dialer keyboard"/>
+<img src="/Visuals/UI-Demo_EditText-Phone.jpg" alt="EditText phone dialler keyboard"/>
 
 -----
 
