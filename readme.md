@@ -18,8 +18,8 @@
 
 
 -----
-# ReflectCode Project demo (Android UI Layout and Widgets)
-This project demonstrate the porting of most of the widely used attributes of various Layout and Widgets controls used in Android project.
+# Android UI Layout and Widgets demo
+This project demonstrate the porting of various Layout and Widgets controls used in Android project.
 This repository contains the Android source code which was used as input and generated iOS source code project.
 
 Following UI Widgets are supported - 
@@ -30,6 +30,7 @@ Following UI Widgets are supported -
 | TextView | Gravity, Ellipsize, Text size, Text Style, System Fonts | 
 | EditText | Keyboard type - Plain, Password, E-Mail, Phone, Time, Number, Action button text | 
 
+**Note** : more UI Controls will be added to this project.
 
 ## Statement Estimation
 | File | Statement |
