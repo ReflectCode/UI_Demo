@@ -23,11 +23,13 @@ This project demonstrate the porting of most of the widely used attributes of va
 This repository contains the Android source code which was used as input and generated iOS source code project.
 
 Following UI Widgets are supported - 
+
 | Widgets | Features |
 |---------|------------|
 | Button | Dimention, Alpha, Text Color, Text size, Text Style, Padding, Button states |
 | TextView | Gravity, Ellipsize, Text size, Text Style, System Fonts | 
 | EditText | Keyboard type - Plain, Password, E-Mail, Phone, Time, Number, Action button text | 
+
 
 ## Statement Estimation
 | File | Statement |
@@ -39,7 +41,7 @@ Following UI Widgets are supported -
 | colors.xml | 30 |
 | strings.xml | 1 |
 | AppIcon | 50 |
-| XCode Project | ?? |
+| XCode Project | 445 |
 | **Total** | **2368** |
 
 -----
