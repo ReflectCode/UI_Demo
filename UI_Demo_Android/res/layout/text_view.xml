@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="top|left">
+
+    <LinearLayout
+        android:id="@+id/Col2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|left"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/tv_g_top"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#ff669900"
+            android:enabled="true"
+            android:gravity="top"
+            android:text="Gravity Top" />
+
+        <TextView
+            android:id="@+id/tv_g_left"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#cccccc"
+            android:enabled="true"
+            android:gravity="left"
+            android:text="Gravity Left" />
+
+        <TextView
+            android:id="@+id/tv_g_top_left"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#ff669900"
+            android:enabled="true"
+            android:gravity="top|left"
+            android:text="Gravity Top+Left" />
+
+        <TextView
+            android:id="@+id/tv_g_top_center"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#cccccc"
+            android:enabled="true"
+            android:gravity="top|center"
+            android:text="Top+Center" />
+
+        <TextView
+            android:id="@+id/tv_g_top_right"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#ff669900"
+            android:enabled="true"
+            android:gravity="top|right"
+            android:text="Top+Right" />
+
+        <TextView
+            android:id="@+id/tv_g_center_h"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#cccccc"
+            android:gravity="center_horizontal"
+            android:text="Center Hrizontal" />
+
+        <TextView
+            android:id="@+id/tv_el_mid"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="Ellipsize = middle" />
+
+        <TextView
+            android:id="@+id/tv_el_start"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:text="Ellipsize = start" />
+
+        <TextView
+            android:id="@+id/tv_el_end"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Ellipsize = end" />
+
+        <TextView
+            android:id="@+id/tv_el_marquee"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Ellipsize = marquee" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="This is a TextView"
+            android:text="Hint" />
+
+        <TextView
+            android:id="@+id/tv_onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="tv_onClick"
+            android:text="onClick" />
+
+        <TextView
+            android:id="@+id/tv_with_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="tv_tag"
+            android:text="With_tag" />
+
+        <TextView
+            android:id="@+id/tv_xxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxx" />
+
+        <TextView
+            android:id="@+id/tv_font_casual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font casual"
+            android:fontFamily="casual"
+            android:textStyle="normal"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_font_casual_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font casual bold"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_font_casual_italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font casual It"
+            android:fontFamily="casual"
+            android:textStyle="italic"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_font_casual_italic_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font casual B I"
+            android:fontFamily="casual"
+            android:textStyle="bold|italic"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_font_serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font serif"
+            android:fontFamily="serif"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_font_serif_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font serif B"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_font_serif_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font serif I"
+            android:fontFamily="serif"
+            android:textStyle="italic"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_font_serif_bi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font serif BI"
+            android:fontFamily="serif"
+            android:textStyle="bold|italic"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/Col3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|left"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/tv_g_bottom"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#cccccc"
+            android:gravity="bottom"
+            android:text="Gravity Bottom" />
+
+        <TextView
+            android:id="@+id/tv_g_right"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#ff669900"
+            android:gravity="right"
+            android:text="Gravity Right" />
+
+        <TextView
+            android:id="@+id/tv_g_btm_left"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#cccccc"
+            android:gravity="bottom|left"
+            android:text="Bottton+Left" />
+
+        <TextView
+            android:id="@+id/tv_g_btm_center"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#ff669900"
+            android:gravity="bottom|center"
+            android:text="Bottom+Center" />
+
+        <TextView
+            android:id="@+id/tv_g_btm_right"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#cccccc"
+            android:gravity="bottom|right"
+            android:text="Bottom+Right" />
+
+        <TextView
+            android:id="@+id/tv_g_center_v"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#ff669900"
+            android:gravity="center_vertical"
+            android:text="Center Vertical" />
+
+
+        <TextView
+            android:id="@+id/tv_g_center"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#cccccc"
+            android:gravity="center"
+            android:text="Gravity Center" />
+
+        <TextView
+            android:id="@+id/tv_bold_txt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Bold Text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_italic_txt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Italic Text"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_bold_italic_txt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Bold + Italic text"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/tv_txt_size_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text size = 10"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_txt_size_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text size = 20"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tv_gone"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invisible text"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visible text"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tv_font_cursive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font cursive"
+            android:fontFamily="cursive"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_font_monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Font monospace"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_font_sans_serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font sans-serif"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_font_sans_serif_condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font sans-serif-condensed"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_font_sans_serif_smallcaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font sans-serif-smallcaps"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_font_serif_monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font serif-mono"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

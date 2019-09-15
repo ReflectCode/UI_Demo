@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Switch sample"
+    />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch : "
+    />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textSize = 30dp : "
+        android:textSize="30dp"
+        />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="With Color : "
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        android:textSize="20dp"
+        />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bold style : "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:checked="true"
+        />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alpha = 0.25 : "
+        android:textSize="20dp"
+        android:alpha="0.25"
+        />
+
+
+    <Switch
+        android:id="@+id/switch6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="100dp"
+        android:text="switchMinWidth = 50 : "
+        android:textSize="20dp" />
+
+    <Switch
+        android:id="@+id/switch7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="switchPadding = 20 : "
+        android:textSize="20dp"
+        android:switchPadding="20dp"
+        />
+
+    <Switch
+        android:id="@+id/switch8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="thumbTint = dark : "
+        android:textSize="20dp"
+        android:thumbTint="@color/colorPrimaryDark"
+        />
+
+    <Switch
+        android:id="@+id/switch9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textOff : "
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Toggle Button sample"
+        />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="On"
+        android:textOff="Off"
+        android:checked="true"
+        />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="On"
+        android:textOff="Off"
+        android:checked="false"
+        />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:text="UI Widget Demo" />
+
+    <Button
+        android:id="@+id/btnButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Button"
+        android:onClick="ButtonClick"/>
+
+    <Button
+        android:id="@+id/btnTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="TextView"
+        android:onClick="TextViewClick"/>
+
+    <Button
+        android:id="@+id/btnEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="EditText"
+        android:onClick="EditTextClick"/>
+
+    <Button
+        android:id="@+id/btnSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SwitchClick"
+        android:text="Switch"
+        android:textAlignment="textStart"
+        android:visibility="invisible" />
+
+
+</LinearLayout>

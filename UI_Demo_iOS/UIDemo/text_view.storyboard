@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UIDemo-NavControl">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DNV-xg-evK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UIDemo-NavControl" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulm-4h-Ru3">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="colorPrimary"/>
+                        <textAttributes key="titleTextAttributes"/>
+                        <textAttributes key="largeTitleTextAttributes"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UIDemo-ToolBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="TextViewActivity-VC" kind="relationship" relationship="rootViewController" id="hC6-UQ-eHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccE-g8-4ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1393" y="607"/>
+        </scene>
+        <!--TextViewActivity-VC-->
+        <scene sceneID="TextViewActivity-VC-Scene">
+            <objects>
+                <viewController storyboardIdentifier="TextViewActivity-VC" id="TextViewActivity-VC" userLabel="TextViewActivity-VC" customClass="TextViewActivity" customModule="UIDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Root-View" id="TextViewActivity-View" userLabel="TextViewActivity-View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" clipsSubviews="YES" tag="1060" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="mainScreen" userLabel="mainScreen">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <subviews>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1061" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="Col2" userLabel="Col2">
+                                        <rect key="frame" x="5" y="5" width="150" height="662"/>
+                                        <subviews>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" tag="1062" contentMode="scaleToFill" text="Gravity Top" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-top" userLabel="tv-g-top" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-top-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-top-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1063" contentMode="scaleToFill" text="Gravity Left" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-left" userLabel="tv-g-left" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="40" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-left-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-left-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" tag="1064" contentMode="scaleToFill" text="Gravity Top+Left" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-top-left" userLabel="tv-g-top-left" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="80" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-top-left-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-top-left-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1065" contentMode="scaleToFill" text="Top+Center" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-top-center" userLabel="tv-g-top-center" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="120" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-top-center-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-top-center-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" tag="1066" contentMode="scaleToFill" text="Top+Right" textAlignment="right" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-top-right" userLabel="tv-g-top-right" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="160" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-top-right-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-top-right-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1067" contentMode="scaleToFill" text="Center Hrizontal" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-center-h" userLabel="tv-g-center-h" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="200" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-center-h-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-center-h-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1068" contentMode="scaleToFill" verticalHuggingPriority="350" text="Ellipsize=middle" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-el-mid" userLabel="tv-el-mid" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="240" width="100" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-el-mid-Height-Eq-19"/>
+                                                    <constraint firstAttribute="width" constant="100" id="tv-el-mid-Width-Eq-100"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1069" contentMode="scaleToFill" verticalHuggingPriority="350" text="Ellipsize=start" lineBreakMode="headTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-el-start" userLabel="tv-el-start" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="259" width="100" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-el-start-Height-Eq-19"/>
+                                                    <constraint firstAttribute="width" constant="100" id="tv-el-start-Width-Eq-100"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1070" contentMode="scaleToFill" verticalHuggingPriority="350" text="Ellipsize=end" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-el-end" userLabel="tv-el-end" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="278" width="100" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-el-end-Height-Eq-19"/>
+                                                    <constraint firstAttribute="width" constant="100" id="tv-el-end-Width-Eq-100"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1071" contentMode="scaleToFill" verticalHuggingPriority="350" text="Ellipsize=marquee" lineBreakMode="tailTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-el-marquee" userLabel="tv-el-marquee" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="297" width="100" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-el-marquee-Height-Eq-19"/>
+                                                    <constraint firstAttribute="width" constant="100" id="tv-el-marquee-Width-Eq-100"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1072" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Hint" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-hint" userLabel="tv-hint" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="316" width="26.666666666666668" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-hint-Height-Eq-19"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1073" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="onClick" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-onClick" userLabel="tv-onClick" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="335" width="48" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-onClick-Height-Eq-19"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1074" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="With_tag" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-with-tag" userLabel="tv-with-tag" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="354" width="57" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-with-tag-Height-Eq-19"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1075" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="xxx" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-xxx" userLabel="tv-xxx" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="373" width="21.666666666666668" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-xxx-Height-Eq-19"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1076" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font casual" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-casual" userLabel="tv-font-casual" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="392" width="64.333333333333329" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="tv-font-casual-Height-Eq-24"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1077" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font casual bold" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-casual-bold" userLabel="tv-font-casual-bold" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="416" width="101.33333333333333" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="tv-font-casual-bold-Height-Eq-24"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1078" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font casual It" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-casual-italic" userLabel="tv-font-casual-italic" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="440" width="76.666666666666671" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="tv-font-casual-italic-Height-Eq-24"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1079" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font casual B I" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-casual-italic-bold" userLabel="tv-font-casual-italic-bold" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="464" width="92.666666666666671" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="tv-font-casual-italic-bold-Height-Eq-24"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1080" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font serif" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-serif" userLabel="tv-font-serif" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="488" width="81.333333333333329" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="tv-font-serif-Height-Eq-26"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="20"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1081" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font serif B" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-serif-b" userLabel="tv-font-serif-b" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="514" width="106" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="tv-font-serif-b-Height-Eq-28"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1082" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font serif I" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-serif-i" userLabel="tv-font-serif-i" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="542" width="90" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="tv-font-serif-i-Height-Eq-27"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Charter-Italic" family="Charter" pointSize="20"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1083" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font serif BI" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-serif-bi" userLabel="tv-font-serif-bi" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="569" width="111" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="tv-font-serif-bi-Height-Eq-28"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Charter-BoldItalic" family="Charter" pointSize="20"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Col2-Width-Eq-150"/>
+                                            <constraint firstAttribute="width" priority="200" constant="150" id="Col2-Width-placeHolder"/>
+                                            <constraint firstItem="tv-el-end" firstAttribute="top" secondItem="tv-el-start" secondAttribute="bottom" id="tv-el-end-below-tv-el-start" userLabel="tv-el-end-below-tv-el-start"/>
+                                            <constraint firstItem="tv-el-end" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-el-end-leading-Col2" userLabel="tv-el-end-leading-Col2"/>
+                                            <constraint firstItem="tv-el-marquee" firstAttribute="top" secondItem="tv-el-end" secondAttribute="bottom" id="tv-el-marquee-below-tv-el-end" userLabel="tv-el-marquee-below-tv-el-end"/>
+                                            <constraint firstItem="tv-el-marquee" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-el-marquee-leading-Col2" userLabel="tv-el-marquee-leading-Col2"/>
+                                            <constraint firstItem="tv-el-mid" firstAttribute="top" secondItem="tv-g-center-h" secondAttribute="bottom" id="tv-el-mid-below-tv-g-center-h" userLabel="tv-el-mid-below-tv-g-center-h"/>
+                                            <constraint firstItem="tv-el-mid" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-el-mid-leading-Col2" userLabel="tv-el-mid-leading-Col2"/>
+                                            <constraint firstItem="tv-el-start" firstAttribute="top" secondItem="tv-el-mid" secondAttribute="bottom" id="tv-el-start-below-tv-el-mid" userLabel="tv-el-start-below-tv-el-mid"/>
+                                            <constraint firstItem="tv-el-start" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-el-start-leading-Col2" userLabel="tv-el-start-leading-Col2"/>
+                                            <constraint firstItem="tv-font-casual" firstAttribute="top" secondItem="tv-xxx" secondAttribute="bottom" id="tv-font-casual-below-tv-xxx" userLabel="tv-font-casual-below-tv-xxx"/>
+                                            <constraint firstItem="tv-font-casual-bold" firstAttribute="top" secondItem="tv-font-casual" secondAttribute="bottom" id="tv-font-casual-bold-below-tv-font-casual" userLabel="tv-font-casual-bold-below-tv-font-casual"/>
+                                            <constraint firstItem="tv-font-casual-bold" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-font-casual-bold-leading-Col2" userLabel="tv-font-casual-bold-leading-Col2"/>
+                                            <constraint firstItem="tv-font-casual-italic" firstAttribute="top" secondItem="tv-font-casual-bold" secondAttribute="bottom" id="tv-font-casual-italic-below-tv-font-casual-bold" userLabel="tv-font-casual-italic-below-tv-font-casual-bold"/>
+                                            <constraint firstItem="tv-font-casual-italic-bold" firstAttribute="top" secondItem="tv-font-casual-italic" secondAttribute="bottom" id="tv-font-casual-italic-bold-below-tv-font-casual-italic" userLabel="tv-font-casual-italic-bold-below-tv-font-casual-italic"/>
+                                            <constraint firstItem="tv-font-casual-italic-bold" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-font-casual-italic-bold-leading-Col2" userLabel="tv-font-casual-italic-bold-leading-Col2"/>
+                                            <constraint firstItem="tv-font-casual-italic" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-font-casual-italic-leading-Col2" userLabel="tv-font-casual-italic-leading-Col2"/>
+                                            <constraint firstItem="tv-font-casual" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-font-casual-leading-Col2" userLabel="tv-font-casual-leading-Col2"/>
+                                            <constraint firstItem="tv-font-serif-b" firstAttribute="top" secondItem="tv-font-serif" secondAttribute="bottom" id="tv-font-serif-b-below-tv-font-serif" userLabel="tv-font-serif-b-below-tv-font-serif"/>
+                                            <constraint firstItem="tv-font-serif-b" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-font-serif-b-leading-Col2" userLabel="tv-font-serif-b-leading-Col2"/>
+                                            <constraint firstItem="tv-font-serif" firstAttribute="top" secondItem="tv-font-casual-italic-bold" secondAttribute="bottom" id="tv-font-serif-below-tv-font-casual-italic-bold" userLabel="tv-font-serif-below-tv-font-casual-italic-bold"/>
+                                            <constraint firstItem="tv-font-serif-bi" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Col2" secondAttribute="bottom" constant="-8" id="tv-font-serif-bi-Bottom-LessThan-Col2-Bottom" userLabel="tv-font-serif-bi-Bottom-LessThan-Col2-Bottom"/>
+                                            <constraint firstItem="tv-font-serif-bi" firstAttribute="top" secondItem="tv-font-serif-i" secondAttribute="bottom" id="tv-font-serif-bi-below-tv-font-serif-i" userLabel="tv-font-serif-bi-below-tv-font-serif-i"/>
+                                            <constraint firstItem="tv-font-serif-bi" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-font-serif-bi-leading-Col2" userLabel="tv-font-serif-bi-leading-Col2"/>
+                                            <constraint firstItem="tv-font-serif-i" firstAttribute="top" secondItem="tv-font-serif-b" secondAttribute="bottom" id="tv-font-serif-i-below-tv-font-serif-b" userLabel="tv-font-serif-i-below-tv-font-serif-b"/>
+                                            <constraint firstItem="tv-font-serif-i" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-font-serif-i-leading-Col2" userLabel="tv-font-serif-i-leading-Col2"/>
+                                            <constraint firstItem="tv-font-serif" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-font-serif-leading-Col2" userLabel="tv-font-serif-leading-Col2"/>
+                                            <constraint firstItem="tv-g-center-h" firstAttribute="top" secondItem="tv-g-top-right" secondAttribute="bottom" id="tv-g-center-h-below-tv-g-top-right" userLabel="tv-g-center-h-below-tv-g-top-right"/>
+                                            <constraint firstItem="tv-g-center-h" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-g-center-h-leading-Col2" userLabel="tv-g-center-h-leading-Col2"/>
+                                            <constraint firstItem="tv-g-left" firstAttribute="top" secondItem="tv-g-top" secondAttribute="bottom" id="tv-g-left-below-tv-g-top" userLabel="tv-g-left-below-tv-g-top"/>
+                                            <constraint firstItem="tv-g-left" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-g-left-leading-Col2" userLabel="tv-g-left-leading-Col2"/>
+                                            <constraint firstItem="tv-g-top" firstAttribute="top" secondItem="Col2" secondAttribute="top" id="tv-g-top-alignTop-withContainer" userLabel="tv-g-top-alignTop-withContainer"/>
+                                            <constraint firstItem="tv-g-top-center" firstAttribute="top" secondItem="tv-g-top-left" secondAttribute="bottom" id="tv-g-top-center-below-tv-g-top-left" userLabel="tv-g-top-center-below-tv-g-top-left"/>
+                                            <constraint firstItem="tv-g-top-center" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-g-top-center-leading-Col2" userLabel="tv-g-top-center-leading-Col2"/>
+                                            <constraint firstItem="tv-g-top" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-g-top-leading-Col2" userLabel="tv-g-top-leading-Col2"/>
+                                            <constraint firstItem="tv-g-top-left" firstAttribute="top" secondItem="tv-g-left" secondAttribute="bottom" id="tv-g-top-left-below-tv-g-left" userLabel="tv-g-top-left-below-tv-g-left"/>
+                                            <constraint firstItem="tv-g-top-left" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-g-top-left-leading-Col2" userLabel="tv-g-top-left-leading-Col2"/>
+                                            <constraint firstItem="tv-g-top-right" firstAttribute="top" secondItem="tv-g-top-center" secondAttribute="bottom" id="tv-g-top-right-below-tv-g-top-center" userLabel="tv-g-top-right-below-tv-g-top-center"/>
+                                            <constraint firstItem="tv-g-top-right" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-g-top-right-leading-Col2" userLabel="tv-g-top-right-leading-Col2"/>
+                                            <constraint firstItem="tv-hint" firstAttribute="top" secondItem="tv-el-marquee" secondAttribute="bottom" id="tv-hint-below-tv-el-marquee" userLabel="tv-hint-below-tv-el-marquee"/>
+                                            <constraint firstItem="tv-hint" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-hint-leading-Col2" userLabel="tv-hint-leading-Col2"/>
+                                            <constraint firstItem="tv-onClick" firstAttribute="top" secondItem="tv-hint" secondAttribute="bottom" id="tv-onClick-below-tv-hint" userLabel="tv-onClick-below-tv-hint"/>
+                                            <constraint firstItem="tv-onClick" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-onClick-leading-Col2" userLabel="tv-onClick-leading-Col2"/>
+                                            <constraint firstItem="tv-with-tag" firstAttribute="top" secondItem="tv-onClick" secondAttribute="bottom" id="tv-with-tag-below-tv-onClick" userLabel="tv-with-tag-below-tv-onClick"/>
+                                            <constraint firstItem="tv-with-tag" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-with-tag-leading-Col2" userLabel="tv-with-tag-leading-Col2"/>
+                                            <constraint firstItem="tv-xxx" firstAttribute="top" secondItem="tv-with-tag" secondAttribute="bottom" id="tv-xxx-below-tv-with-tag" userLabel="tv-xxx-below-tv-with-tag"/>
+                                            <constraint firstItem="tv-xxx" firstAttribute="leading" secondItem="Col2" secondAttribute="leading" id="tv-xxx-leading-Col2" userLabel="tv-xxx-leading-Col2"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="tv-font-serif-bi-Bottom-LessThan-Col2-Bottom"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1084" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="Col3" userLabel="Col3">
+                                        <rect key="frame" x="165" y="5" width="244" height="662"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1085" contentMode="scaleToFill" text="Gravity Bottom" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-bottom" userLabel="tv-g-bottom" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-bottom-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-bottom-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" tag="1086" contentMode="scaleToFill" text="Gravity Right" textAlignment="right" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-right" userLabel="tv-g-right" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="40" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-right-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-right-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1087" contentMode="scaleToFill" text="Bottton+Left" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-btm-left" userLabel="tv-g-btm-left" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="80" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-btm-left-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-btm-left-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" tag="1088" contentMode="scaleToFill" text="Bottom+Center" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-btm-center" userLabel="tv-g-btm-center" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="120" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-btm-center-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-btm-center-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1089" contentMode="scaleToFill" text="Bottom+Right" textAlignment="right" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-btm-right" userLabel="tv-g-btm-right" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="160" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-btm-right-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-btm-right-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" tag="1090" contentMode="scaleToFill" text="Center Vertical" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-center-v" userLabel="tv-g-center-v" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="200" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-center-v-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-center-v-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1091" contentMode="scaleToFill" text="Gravity Center" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-g-center" userLabel="tv-g-center" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="240" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tv-g-center-Height-Eq-40"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-g-center-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1092" contentMode="scaleToFill" verticalHuggingPriority="350" text="Bold Text" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-bold-txt" userLabel="tv-bold-txt" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="280" width="150" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-bold-txt-Height-Eq-19"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-bold-txt-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1093" contentMode="scaleToFill" verticalHuggingPriority="350" text="Italic Text" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-italic-txt" userLabel="tv-italic-txt" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="299" width="150" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-italic-txt-Height-Eq-19"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-italic-txt-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1094" contentMode="scaleToFill" verticalHuggingPriority="350" text="Bold + Italic text" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-bold-italic-txt" userLabel="tv-bold-italic-txt" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="318" width="150" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-bold-italic-txt-Height-Eq-19"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tv-bold-italic-txt-Width-Eq-150"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1095" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Text size=10" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-txt-size-10" userLabel="tv-txt-size-10" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="337" width="60.333333333333336" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="tv-txt-size-10-Height-Eq-14"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1096" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Text size=20" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-txt-size-20" userLabel="tv-txt-size-20" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="351" width="111.33333333333333" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="tv-txt-size-20-Height-Eq-28"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            </label>
+                                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1097" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="tv_gone" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-gone" userLabel="tv-gone" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="379" width="49.666666666666664" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-gone-Height-Eq-19"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1098" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Invisible text" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-invisible" userLabel="tv-invisible" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="398" width="80.666666666666671" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-invisible-Height-Eq-19"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1099" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Visible text" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-visible" userLabel="tv-visible" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="417" width="71.333333333333329" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="tv-visible-Height-Eq-19"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1100" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font cursive" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-cursive" userLabel="tv-font-cursive" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="436" width="93" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="tv-font-cursive-Height-Eq-25"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1101" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font monospace" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-monospace" userLabel="tv-font-monospace" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="461" width="168.66666666666666" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="tv-font-monospace-Height-Eq-28"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1102" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font sans-serif" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-sans-serif" userLabel="tv-font-sans-serif" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="489" width="132.33333333333334" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="tv-font-sans-serif-Height-Eq-28"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1103" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font sans-serif-condensed" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-sans-serif-condensed" userLabel="tv-font-sans-serif-condensed" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="517" width="181.33333333333334" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="tv-font-sans-serif-condensed-Height-Eq-28"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1104" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font sans-serif-smallcaps" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-sans-serif-smallcaps" userLabel="tv-font-sans-serif-smallcaps" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="545" width="201.33333333333334" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="tv-font-sans-serif-smallcaps-Height-Eq-48"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1105" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Font serif-mono" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tv-font-serif-monospace" userLabel="tv-font-serif-monospace" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="593" width="180.33333333333334" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="tv-font-serif-monospace-Height-Eq-23"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="244" id="Col3-Width-Eq-244"/>
+                                            <constraint firstAttribute="width" priority="200" constant="244" id="Col3-Width-placeHolder"/>
+                                            <constraint firstItem="tv-bold-italic-txt" firstAttribute="top" secondItem="tv-italic-txt" secondAttribute="bottom" id="tv-bold-italic-txt-below-tv-italic-txt" userLabel="tv-bold-italic-txt-below-tv-italic-txt"/>
+                                            <constraint firstItem="tv-bold-italic-txt" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-bold-italic-txt-leading-Col3" userLabel="tv-bold-italic-txt-leading-Col3"/>
+                                            <constraint firstItem="tv-bold-txt" firstAttribute="top" secondItem="tv-g-center" secondAttribute="bottom" id="tv-bold-txt-below-tv-g-center" userLabel="tv-bold-txt-below-tv-g-center"/>
+                                            <constraint firstItem="tv-bold-txt" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-bold-txt-leading-Col3" userLabel="tv-bold-txt-leading-Col3"/>
+                                            <constraint firstItem="tv-font-cursive" firstAttribute="top" secondItem="tv-visible" secondAttribute="bottom" id="tv-font-cursive-below-tv-visible" userLabel="tv-font-cursive-below-tv-visible"/>
+                                            <constraint firstItem="tv-font-cursive" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-font-cursive-leading-Col3" userLabel="tv-font-cursive-leading-Col3"/>
+                                            <constraint firstItem="tv-font-monospace" firstAttribute="top" secondItem="tv-font-cursive" secondAttribute="bottom" id="tv-font-monospace-below-tv-font-cursive" userLabel="tv-font-monospace-below-tv-font-cursive"/>
+                                            <constraint firstItem="tv-font-monospace" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-font-monospace-leading-Col3" userLabel="tv-font-monospace-leading-Col3"/>
+                                            <constraint firstItem="tv-font-sans-serif" firstAttribute="top" secondItem="tv-font-monospace" secondAttribute="bottom" id="tv-font-sans-serif-below-tv-font-monospace" userLabel="tv-font-sans-serif-below-tv-font-monospace"/>
+                                            <constraint firstItem="tv-font-sans-serif-condensed" firstAttribute="top" secondItem="tv-font-sans-serif" secondAttribute="bottom" id="tv-font-sans-serif-condensed-below-tv-font-sans-serif" userLabel="tv-font-sans-serif-condensed-below-tv-font-sans-serif"/>
+                                            <constraint firstItem="tv-font-sans-serif-condensed" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-font-sans-serif-condensed-leading-Col3" userLabel="tv-font-sans-serif-condensed-leading-Col3"/>
+                                            <constraint firstItem="tv-font-sans-serif" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-font-sans-serif-leading-Col3" userLabel="tv-font-sans-serif-leading-Col3"/>
+                                            <constraint firstItem="tv-font-sans-serif-smallcaps" firstAttribute="top" secondItem="tv-font-sans-serif-condensed" secondAttribute="bottom" id="tv-font-sans-serif-smallcaps-below-tv-font-sans-serif-condensed" userLabel="tv-font-sans-serif-smallcaps-below-tv-font-sans-serif-condensed"/>
+                                            <constraint firstItem="tv-font-sans-serif-smallcaps" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-font-sans-serif-smallcaps-leading-Col3" userLabel="tv-font-sans-serif-smallcaps-leading-Col3"/>
+                                            <constraint firstItem="tv-font-serif-monospace" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Col3" secondAttribute="bottom" constant="-8" id="tv-font-serif-monospace-Bottom-LessThan-Col3-Bottom" userLabel="tv-font-serif-monospace-Bottom-LessThan-Col3-Bottom"/>
+                                            <constraint firstItem="tv-font-serif-monospace" firstAttribute="top" secondItem="tv-font-sans-serif-smallcaps" secondAttribute="bottom" id="tv-font-serif-monospace-below-tv-font-sans-serif-smallcaps" userLabel="tv-font-serif-monospace-below-tv-font-sans-serif-smallcaps"/>
+                                            <constraint firstItem="tv-font-serif-monospace" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-font-serif-monospace-leading-Col3" userLabel="tv-font-serif-monospace-leading-Col3"/>
+                                            <constraint firstItem="tv-g-bottom" firstAttribute="top" secondItem="Col3" secondAttribute="top" id="tv-g-bottom-alignTop-withContainer" userLabel="tv-g-bottom-alignTop-withContainer"/>
+                                            <constraint firstItem="tv-g-bottom" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-g-bottom-leading-Col3" userLabel="tv-g-bottom-leading-Col3"/>
+                                            <constraint firstItem="tv-g-btm-center" firstAttribute="top" secondItem="tv-g-btm-left" secondAttribute="bottom" id="tv-g-btm-center-below-tv-g-btm-left" userLabel="tv-g-btm-center-below-tv-g-btm-left"/>
+                                            <constraint firstItem="tv-g-btm-center" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-g-btm-center-leading-Col3" userLabel="tv-g-btm-center-leading-Col3"/>
+                                            <constraint firstItem="tv-g-btm-left" firstAttribute="top" secondItem="tv-g-right" secondAttribute="bottom" id="tv-g-btm-left-below-tv-g-right" userLabel="tv-g-btm-left-below-tv-g-right"/>
+                                            <constraint firstItem="tv-g-btm-left" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-g-btm-left-leading-Col3" userLabel="tv-g-btm-left-leading-Col3"/>
+                                            <constraint firstItem="tv-g-btm-right" firstAttribute="top" secondItem="tv-g-btm-center" secondAttribute="bottom" id="tv-g-btm-right-below-tv-g-btm-center" userLabel="tv-g-btm-right-below-tv-g-btm-center"/>
+                                            <constraint firstItem="tv-g-btm-right" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-g-btm-right-leading-Col3" userLabel="tv-g-btm-right-leading-Col3"/>
+                                            <constraint firstItem="tv-g-center" firstAttribute="top" secondItem="tv-g-center-v" secondAttribute="bottom" id="tv-g-center-below-tv-g-center-v" userLabel="tv-g-center-below-tv-g-center-v"/>
+                                            <constraint firstItem="tv-g-center" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-g-center-leading-Col3" userLabel="tv-g-center-leading-Col3"/>
+                                            <constraint firstItem="tv-g-center-v" firstAttribute="top" secondItem="tv-g-btm-right" secondAttribute="bottom" id="tv-g-center-v-below-tv-g-btm-right" userLabel="tv-g-center-v-below-tv-g-btm-right"/>
+                                            <constraint firstItem="tv-g-center-v" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-g-center-v-leading-Col3" userLabel="tv-g-center-v-leading-Col3"/>
+                                            <constraint firstItem="tv-g-right" firstAttribute="top" secondItem="tv-g-bottom" secondAttribute="bottom" id="tv-g-right-below-tv-g-bottom" userLabel="tv-g-right-below-tv-g-bottom"/>
+                                            <constraint firstItem="tv-g-right" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-g-right-leading-Col3" userLabel="tv-g-right-leading-Col3"/>
+                                            <constraint firstItem="tv-gone" firstAttribute="top" secondItem="tv-txt-size-20" secondAttribute="bottom" id="tv-gone-below-tv-txt-size-20" userLabel="tv-gone-below-tv-txt-size-20"/>
+                                            <constraint firstItem="tv-gone" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-gone-leading-Col3" userLabel="tv-gone-leading-Col3"/>
+                                            <constraint firstItem="tv-invisible" firstAttribute="top" secondItem="tv-gone" secondAttribute="bottom" id="tv-invisible-below-tv-gone" userLabel="tv-invisible-below-tv-gone"/>
+                                            <constraint firstItem="tv-invisible" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-invisible-leading-Col3" userLabel="tv-invisible-leading-Col3"/>
+                                            <constraint firstItem="tv-italic-txt" firstAttribute="top" secondItem="tv-bold-txt" secondAttribute="bottom" id="tv-italic-txt-below-tv-bold-txt" userLabel="tv-italic-txt-below-tv-bold-txt"/>
+                                            <constraint firstItem="tv-italic-txt" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-italic-txt-leading-Col3" userLabel="tv-italic-txt-leading-Col3"/>
+                                            <constraint firstItem="tv-txt-size-10" firstAttribute="top" secondItem="tv-bold-italic-txt" secondAttribute="bottom" id="tv-txt-size-10-below-tv-bold-italic-txt" userLabel="tv-txt-size-10-below-tv-bold-italic-txt"/>
+                                            <constraint firstItem="tv-txt-size-10" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-txt-size-10-leading-Col3" userLabel="tv-txt-size-10-leading-Col3"/>
+                                            <constraint firstItem="tv-txt-size-20" firstAttribute="top" secondItem="tv-txt-size-10" secondAttribute="bottom" id="tv-txt-size-20-below-tv-txt-size-10" userLabel="tv-txt-size-20-below-tv-txt-size-10"/>
+                                            <constraint firstItem="tv-txt-size-20" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-txt-size-20-leading-Col3" userLabel="tv-txt-size-20-leading-Col3"/>
+                                            <constraint firstItem="tv-visible" firstAttribute="top" secondItem="tv-invisible" secondAttribute="bottom" id="tv-visible-below-tv-invisible" userLabel="tv-visible-below-tv-invisible"/>
+                                            <constraint firstItem="tv-visible" firstAttribute="leading" secondItem="Col3" secondAttribute="leading" id="tv-visible-leading-Col3" userLabel="tv-visible-leading-Col3"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Col3-Width-Eq-244"/>
+                                                <exclude reference="tv-font-serif-monospace-Bottom-LessThan-Col3-Bottom"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Col2" firstAttribute="leading" secondItem="mainScreen" secondAttribute="leading" constant="5" id="Col2-leading-mainScreen" userLabel="Col2-leading-mainScreen"/>
+                                    <constraint firstItem="Col2" firstAttribute="bottom" secondItem="mainScreen" secondAttribute="bottom" constant="-5" id="Col2-matchBottom-mainScreen" userLabel="Col2-matchBottom-mainScreen"/>
+                                    <constraint firstItem="Col2" firstAttribute="top" secondItem="mainScreen" secondAttribute="top" constant="5" id="Col2-matchTop-mainScreen" userLabel="Col2-matchTop-mainScreen"/>
+                                    <constraint firstItem="Col3" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="mainScreen" secondAttribute="trailing" constant="-5" id="Col3-Trailing-LessThan-mainScreen-Trailing" userLabel="Col3-Trailing-LessThan-mainScreen-Trailing"/>
+                                    <constraint firstItem="Col3" firstAttribute="bottom" secondItem="mainScreen" secondAttribute="bottom" constant="-5" id="Col3-matchBottom-mainScreen" userLabel="Col3-matchBottom-mainScreen"/>
+                                    <constraint firstItem="Col3" firstAttribute="top" secondItem="mainScreen" secondAttribute="top" constant="5" id="Col3-matchTop-mainScreen" userLabel="Col3-matchTop-mainScreen"/>
+                                    <constraint firstItem="Col3" firstAttribute="left" secondItem="Col2" secondAttribute="right" constant="10" id="Col3-toRightOf-Col2" userLabel="Col3-toRightOf-Col2"/>
+                                    <constraint firstItem="Col3" firstAttribute="trailing" secondItem="mainScreen" secondAttribute="trailing" priority="100" constant="-5" id="Col3-trailing-max" userLabel="Col3-trailing-max"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
+                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="TextViewActivity-View-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="TextViewActivity-View-safeArea" secondAttribute="leading" id="footer-match-leading"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="mainScreen" secondAttribute="bottom" id="footer-match-top-mainScreen" userLabel="footer-match-top-mainScreen"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="TextViewActivity-View-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
+                            <constraint firstItem="mainScreen" firstAttribute="leading" secondItem="TextViewActivity-View-safeArea" secondAttribute="leading" id="mainScreen-matchLeading-TextViewActivity-View-safeArea" userLabel="mainScreen-matchLeading-TextViewActivity-View-safeArea"/>
+                            <constraint firstItem="mainScreen" firstAttribute="top" secondItem="TextViewActivity-View-safeArea" secondAttribute="top" id="mainScreen-matchTop-TextViewActivity-View-safeArea" userLabel="mainScreen-matchTop-TextViewActivity-View-safeArea"/>
+                            <constraint firstItem="mainScreen" firstAttribute="trailing" secondItem="TextViewActivity-View-safeArea" secondAttribute="trailing" id="mainScreen-matchTrailing-TextViewActivity-View-safeArea" userLabel="mainScreen-matchTrailing-TextViewActivity-View-safeArea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TextViewActivity-View-safeArea"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIDemo" id="TextViewActivity-VC-Nav-ID"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-600" y="607"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

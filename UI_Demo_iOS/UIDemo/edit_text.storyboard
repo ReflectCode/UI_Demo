@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UIDemo-NavControl">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DNV-xg-evK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UIDemo-NavControl" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulm-4h-Ru3">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="colorPrimary"/>
+                        <textAttributes key="titleTextAttributes"/>
+                        <textAttributes key="largeTitleTextAttributes"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UIDemo-ToolBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="EditTextActivity-VC" kind="relationship" relationship="rootViewController" id="hC6-UQ-eHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccE-g8-4ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="600"/>
+        </scene>
+        <!--EditTextActivity-VC-->
+        <scene sceneID="EditTextActivity-VC-Scene">
+            <objects>
+                <viewController storyboardIdentifier="EditTextActivity-VC" id="EditTextActivity-VC" userLabel="EditTextActivity-VC" customClass="EditTextActivity" customModule="UIDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Root-View" id="EditTextActivity-View" userLabel="EditTextActivity-View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" clipsSubviews="YES" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="background" userLabel="background">
+                                <rect key="frame" x="4" y="64" width="406" height="672"/>
+                                <subviews>
+                                    <textField opaque="NO" tag="1029" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Plain Text" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="et-demo-1" userLabel="et-demo-1">
+                                        <rect key="frame" x="0.0" y="0.0" width="406" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="et-demo-1-Height-Eq-46"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1030" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Action Done" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="et-demo-3" userLabel="et-demo-3">
+                                        <rect key="frame" x="0.0" y="46" width="406" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="et-demo-3-Height-Eq-46"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1031" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="editText" userLabel="editText">
+                                        <rect key="frame" x="0.0" y="92" width="406" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="editText-Height-Eq-46"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardType="alphabet" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1032" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password Numeric" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="editText2" userLabel="editText2">
+                                        <rect key="frame" x="0.0" y="138" width="406" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="editText2-Height-Eq-46"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardType="numberPad" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1033" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="E-mail" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="editText3" userLabel="editText3">
+                                        <rect key="frame" x="0.0" y="184" width="406" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="editText3-Height-Eq-46"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1034" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Phone" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="et-demo-4" userLabel="et-demo-4">
+                                        <rect key="frame" x="0.0" y="230" width="406" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="et-demo-4-Height-Eq-46"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardType="phonePad"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1035" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Postal address" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="editText4" userLabel="editText4">
+                                        <rect key="frame" x="0.0" y="276" width="406" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="editText4-Height-Eq-46"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardType="alphabet"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1036" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Time" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="editText5" userLabel="editText5">
+                                        <rect key="frame" x="0.0" y="322" width="406" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="editText5-Height-Eq-46"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardType="numbersAndPunctuation"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1037" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Date" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="editText6" userLabel="editText6">
+                                        <rect key="frame" x="0.0" y="368" width="406" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="editText6-Height-Eq-46"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardType="numbersAndPunctuation"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1038" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Number" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="editText8" userLabel="editText8">
+                                        <rect key="frame" x="0.0" y="414" width="406" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="editText8-Height-Eq-46"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1039" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Number Decimal" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="editText7" userLabel="editText7">
+                                        <rect key="frame" x="0.0" y="460" width="406" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="editText7-Height-Eq-46"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardType="decimalPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="506" id="background-Height-Eq-506"/>
+                                    <constraint firstAttribute="height" priority="200" constant="506" id="background-Height-placeHolder"/>
+                                    <constraint firstItem="editText" firstAttribute="top" secondItem="et-demo-3" secondAttribute="bottom" id="editText-below-et-demo-3" userLabel="editText-below-et-demo-3"/>
+                                    <constraint firstItem="editText" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="editText-matchLeading-background" userLabel="editText-matchLeading-background"/>
+                                    <constraint firstItem="editText" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="editText-matchTrailing-background" userLabel="editText-matchTrailing-background"/>
+                                    <constraint firstItem="editText2" firstAttribute="top" secondItem="editText" secondAttribute="bottom" id="editText2-below-editText" userLabel="editText2-below-editText"/>
+                                    <constraint firstItem="editText2" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="editText2-matchLeading-background" userLabel="editText2-matchLeading-background"/>
+                                    <constraint firstItem="editText2" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="editText2-matchTrailing-background" userLabel="editText2-matchTrailing-background"/>
+                                    <constraint firstItem="editText3" firstAttribute="top" secondItem="editText2" secondAttribute="bottom" id="editText3-below-editText2" userLabel="editText3-below-editText2"/>
+                                    <constraint firstItem="editText3" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="editText3-matchLeading-background" userLabel="editText3-matchLeading-background"/>
+                                    <constraint firstItem="editText3" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="editText3-matchTrailing-background" userLabel="editText3-matchTrailing-background"/>
+                                    <constraint firstItem="editText4" firstAttribute="top" secondItem="et-demo-4" secondAttribute="bottom" id="editText4-below-et-demo-4" userLabel="editText4-below-et-demo-4"/>
+                                    <constraint firstItem="editText4" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="editText4-matchLeading-background" userLabel="editText4-matchLeading-background"/>
+                                    <constraint firstItem="editText4" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="editText4-matchTrailing-background" userLabel="editText4-matchTrailing-background"/>
+                                    <constraint firstItem="editText5" firstAttribute="top" secondItem="editText4" secondAttribute="bottom" id="editText5-below-editText4" userLabel="editText5-below-editText4"/>
+                                    <constraint firstItem="editText5" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="editText5-matchLeading-background" userLabel="editText5-matchLeading-background"/>
+                                    <constraint firstItem="editText5" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="editText5-matchTrailing-background" userLabel="editText5-matchTrailing-background"/>
+                                    <constraint firstItem="editText6" firstAttribute="top" secondItem="editText5" secondAttribute="bottom" id="editText6-below-editText5" userLabel="editText6-below-editText5"/>
+                                    <constraint firstItem="editText6" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="editText6-matchLeading-background" userLabel="editText6-matchLeading-background"/>
+                                    <constraint firstItem="editText6" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="editText6-matchTrailing-background" userLabel="editText6-matchTrailing-background"/>
+                                    <constraint firstItem="editText7" firstAttribute="top" secondItem="editText8" secondAttribute="bottom" id="editText7-below-editText8" userLabel="editText7-below-editText8"/>
+                                    <constraint firstItem="editText7" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="editText7-matchLeading-background" userLabel="editText7-matchLeading-background"/>
+                                    <constraint firstItem="editText7" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="editText7-matchTrailing-background" userLabel="editText7-matchTrailing-background"/>
+                                    <constraint firstItem="editText8" firstAttribute="top" secondItem="editText6" secondAttribute="bottom" id="editText8-below-editText6" userLabel="editText8-below-editText6"/>
+                                    <constraint firstItem="editText8" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="editText8-matchLeading-background" userLabel="editText8-matchLeading-background"/>
+                                    <constraint firstItem="editText8" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="editText8-matchTrailing-background" userLabel="editText8-matchTrailing-background"/>
+                                    <constraint firstItem="et-demo-1" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="et-demo-1-matchLeading-background" userLabel="et-demo-1-matchLeading-background"/>
+                                    <constraint firstItem="et-demo-1" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="et-demo-1-matchTrailing-background" userLabel="et-demo-1-matchTrailing-background"/>
+                                    <constraint firstItem="et-demo-1" firstAttribute="top" secondItem="background" secondAttribute="top" id="et-demo-1-top-background" userLabel="et-demo-1-top-background"/>
+                                    <constraint firstItem="et-demo-3" firstAttribute="top" secondItem="et-demo-1" secondAttribute="bottom" id="et-demo-3-below-et-demo-1" userLabel="et-demo-3-below-et-demo-1"/>
+                                    <constraint firstItem="et-demo-3" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="et-demo-3-matchLeading-background" userLabel="et-demo-3-matchLeading-background"/>
+                                    <constraint firstItem="et-demo-3" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="et-demo-3-matchTrailing-background" userLabel="et-demo-3-matchTrailing-background"/>
+                                    <constraint firstItem="et-demo-4" firstAttribute="top" secondItem="editText3" secondAttribute="bottom" id="et-demo-4-below-editText3" userLabel="et-demo-4-below-editText3"/>
+                                    <constraint firstItem="et-demo-4" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="et-demo-4-matchLeading-background" userLabel="et-demo-4-matchLeading-background"/>
+                                    <constraint firstItem="et-demo-4" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="et-demo-4-matchTrailing-background" userLabel="et-demo-4-matchTrailing-background"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
+                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="background" firstAttribute="leading" secondItem="EditTextActivity-View-safeArea" secondAttribute="leading" constant="4" id="background-matchLeading-EditTextActivity-View-safeArea" userLabel="background-matchLeading-EditTextActivity-View-safeArea"/>
+                            <constraint firstItem="background" firstAttribute="top" secondItem="EditTextActivity-View-safeArea" secondAttribute="top" id="background-matchTop-EditTextActivity-View-safeArea" userLabel="background-matchTop-EditTextActivity-View-safeArea"/>
+                            <constraint firstItem="background" firstAttribute="trailing" secondItem="EditTextActivity-View-safeArea" secondAttribute="trailing" constant="-4" id="background-matchTrailing-EditTextActivity-View-safeArea" userLabel="background-matchTrailing-EditTextActivity-View-safeArea"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="EditTextActivity-View-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="EditTextActivity-View-safeArea" secondAttribute="leading" id="footer-match-leading"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="background" secondAttribute="bottom" id="footer-match-top-background" userLabel="footer-match-top-background"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="EditTextActivity-View-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EditTextActivity-View-safeArea"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIDemo" id="EditTextActivity-VC-Nav-ID"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400" y="600"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RC_text_field_underline" width="7" height="24"/>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
