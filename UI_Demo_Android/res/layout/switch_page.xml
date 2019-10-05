@@ -1,124 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    android:padding="8dp">
+    >
 
     <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="Switch sample"
-    />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch : "
-    />
-
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="textSize = 30dp : "
-        android:textSize="30dp"
-        />
-
-    <Switch
-        android:id="@+id/switch3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="With Color : "
-        android:textColor="@color/colorAccent"
-        android:background="@color/colorPrimary"
-        android:textSize="20dp"
-        />
-
-    <Switch
-        android:id="@+id/switch4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bold style : "
-        android:textSize="20dp"
+        android:text="* Switch demo"
+        android:textSize="25dp"
         android:textStyle="bold"
+        android:textColor="#000"
+
+        />
+
+    <Switch
+        android:id="@+id/sw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch-1"
+        android:background="#0cc"
+        android:enabled="true"
+        />
+
+
+    <Switch
+        android:id="@+id/sw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch-2 rtl"
+        android:layoutDirection="rtl"
+        android:switchPadding="90dp"
+        android:background="#ccc"
+        android:padding="0dp"
+
+        />
+
+    <Switch
+        android:id="@+id/sw3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Switch-3"
+        android:textStyle="italic"
+
         android:checked="true"
+        android:switchMinWidth="40dp"
+        android:switchPadding="80dp"
+        android:background="#0cc"
+        android:shadowColor="@color/colorAccent"
+        android:thumbTint="@color/colorPrimary"
+
+        android:padding="0dp"
+        android:layout_margin="20dp"
+
         />
 
     <Switch
-        android:id="@+id/switch5"
+        android:id="@+id/sw4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alpha = 0.25 : "
-        android:textSize="20dp"
-        android:alpha="0.25"
+        android:text="Switch-4"
+        android:background="@drawable/underline"
         />
 
 
     <Switch
-        android:id="@+id/switch6"
+        android:id="@+id/sw5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:switchMinWidth="100dp"
-        android:text="switchMinWidth = 50 : "
-        android:textSize="20dp" />
 
-    <Switch
-        android:id="@+id/switch7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="switchPadding = 20 : "
-        android:textSize="20dp"
+        android:text="Switch"
+
+        android:checked="false"
+        android:switchMinWidth="150dp"
         android:switchPadding="20dp"
+        android:thumb="@drawable/ic_launcher_round"
+        android:track="@drawable/underline"
+        android:textColor="@color/colorAccent"
+
         />
 
-    <Switch
-        android:id="@+id/switch8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="thumbTint = dark : "
-        android:textSize="20dp"
-        android:thumbTint="@color/colorPrimaryDark"
-        />
-
-    <Switch
-        android:id="@+id/switch9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="textOff : "
-        android:textSize="20dp"
-        android:textAllCaps="false"
-        />
 
     <TextView
+        android:id="@+id/tvTitle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        android:text="Toggle Button sample"
+        android:text="* Toggle Button demo"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:textColor="#000"
         />
 
     <ToggleButton
         android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton" />
+
+    <LinearLayout
+        android:id="@+id/subView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#0BB"
+
+        >
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:textOff="  Off...  "
+            android:textOn="  On...  "
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+
+            android:background="@drawable/underline"
+
+            android:checked="true"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+
+            />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="ToggleButton"
+            android:textOff="Off..."
+            android:textOn="On..."
+            android:textSize="25dp"
+
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/underline"
+            android:checked="false"
+            android:layout_margin="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvTitle3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textOn="On"
-        android:textOff="Off"
-        android:checked="true"
+        android:text="* Image Button demo"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:textColor="#000"
         />
 
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/subview3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textOn="On"
-        android:textOff="Off"
-        android:checked="false"
-        />
+        android:orientation="horizontal"
+        android:background="#BBB"
+        android:padding="10dp"
+
+        >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            app:srcCompat="@drawable/ic_launcher"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:padding="20dp"
+            app:srcCompat="@drawable/ic_launcher"
+            />
+
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/underline"
+            android:src="@drawable/ic_launcher"
+
+            />
+
+    </LinearLayout>
 
 </LinearLayout>

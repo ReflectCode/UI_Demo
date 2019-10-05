@@ -552,23 +552,13 @@
                                     <constraint firstItem="Col3" firstAttribute="trailing" secondItem="mainScreen" secondAttribute="trailing" priority="100" constant="-5" id="Col3-trailing-max" userLabel="Col3-trailing-max"/>
                                 </constraints>
                             </view>
-                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
-                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="TextViewActivity-View-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="TextViewActivity-View-safeArea" secondAttribute="leading" id="footer-match-leading"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="mainScreen" secondAttribute="bottom" id="footer-match-top-mainScreen" userLabel="footer-match-top-mainScreen"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="TextViewActivity-View-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
                             <constraint firstItem="mainScreen" firstAttribute="leading" secondItem="TextViewActivity-View-safeArea" secondAttribute="leading" id="mainScreen-matchLeading-TextViewActivity-View-safeArea" userLabel="mainScreen-matchLeading-TextViewActivity-View-safeArea"/>
                             <constraint firstItem="mainScreen" firstAttribute="top" secondItem="TextViewActivity-View-safeArea" secondAttribute="top" id="mainScreen-matchTop-TextViewActivity-View-safeArea" userLabel="mainScreen-matchTop-TextViewActivity-View-safeArea"/>
                             <constraint firstItem="mainScreen" firstAttribute="trailing" secondItem="TextViewActivity-View-safeArea" secondAttribute="trailing" id="mainScreen-matchTrailing-TextViewActivity-View-safeArea" userLabel="mainScreen-matchTrailing-TextViewActivity-View-safeArea"/>
+                            <constraint firstItem="TextViewActivity-View-safeArea" firstAttribute="bottom" secondItem="mainScreen" secondAttribute="bottom" id="sj6-Pp-BlL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TextViewActivity-View-safeArea"/>
                     </view>

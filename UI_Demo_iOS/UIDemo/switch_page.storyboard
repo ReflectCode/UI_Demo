@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UIDemo-NavControl">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DNV-xg-evK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UIDemo-NavControl" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulm-4h-Ru3">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="colorPrimary"/>
+                        <textAttributes key="titleTextAttributes"/>
+                        <textAttributes key="largeTitleTextAttributes"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UIDemo-ToolBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="SwitchActivity-VC" kind="relationship" relationship="rootViewController" id="hC6-UQ-eHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccE-g8-4ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1122" y="600"/>
+        </scene>
+        <!--SwitchActivity-VC-->
+        <scene sceneID="SwitchActivity-VC-Scene">
+            <objects>
+                <viewController storyboardIdentifier="SwitchActivity-VC" id="SwitchActivity-VC" userLabel="SwitchActivity-VC" customClass="SwitchActivity" customModule="UIDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Root-View" id="SwitchActivity-View" userLabel="SwitchActivity-View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" clipsSubviews="YES" tag="1044" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="rootView" userLabel="rootView">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1045" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="* Switch demo" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tvTitle" userLabel="tvTitle">
+                                        <rect key="frame" x="0.0" y="0.0" width="155.66666666666666" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="tvTitle-Height-Eq-34"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sw1-backView" userLabel="sw1-backView">
+                                        <rect key="frame" x="0.0" y="34" width="100" height="27"/>
+                                        <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sw1" userLabel="sw1" customClass="SevenSwitch" customModule="UIDemo" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="34" width="40" height="27"/>
+                                        <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="sw1-Height-Eq-27"/>
+                                            <constraint firstAttribute="width" constant="40" id="sw1-Width-Eq-40"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="onThumbTintColor">
+                                                <color key="value" red="0.84705882349999995" green="0.1058823529" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1046" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Switch-1" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="sw1-label" userLabel="sw1-label">
+                                        <rect key="frame" x="0.0" y="34" width="60" height="27"/>
+                                        <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="sw1-label-Height-Eq-27"/>
+                                            <constraint firstAttribute="width" constant="60" id="sw1-label-Width-Eq-60"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sw2-backView" userLabel="sw2-backView">
+                                        <rect key="frame" x="0.0" y="61" width="206" height="27"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sw2" userLabel="sw2" customClass="SevenSwitch" customModule="UIDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="61" width="40" height="27"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="sw2-Height-Eq-27"/>
+                                            <constraint firstAttribute="width" constant="40" id="sw2-Width-Eq-40"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="onThumbTintColor">
+                                                <color key="value" red="0.84705882349999995" green="0.1058823529" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1047" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Switch-2 rtl" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="sw2-label" userLabel="sw2-label">
+                                        <rect key="frame" x="130" y="61" width="76" height="27"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="sw2-label-Height-Eq-27"/>
+                                            <constraint firstAttribute="width" constant="76" id="sw2-label-Width-Eq-76"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sw3-backView" userLabel="sw3-backView">
+                                        <rect key="frame" x="20" y="108" width="179" height="27"/>
+                                        <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sw3" userLabel="sw3" customClass="SevenSwitch" customModule="UIDemo" customModuleProvider="target">
+                                        <rect key="frame" x="159" y="108" width="40" height="27"/>
+                                        <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="sw3-Height-Eq-27"/>
+                                            <constraint firstAttribute="width" constant="40" id="sw3-Width-Eq-40"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="onThumbTintColor">
+                                                <color key="value" name="colorPrimary"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" name="colorAccent"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1048" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Switch-3" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="sw3-label" userLabel="sw3-label">
+                                        <rect key="frame" x="20" y="108" width="59" height="27"/>
+                                        <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="sw3-label-Height-Eq-27"/>
+                                            <constraint firstAttribute="width" constant="59" id="sw3-label-Width-Eq-59"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sw4-backView" userLabel="sw4-backView">
+                                        <rect key="frame" x="0.0" y="155" width="100" height="31"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sw4" userLabel="sw4" customClass="SevenSwitch" customModule="UIDemo" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="155" width="40" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="sw4-Height-Eq-31"/>
+                                            <constraint firstAttribute="width" constant="40" id="sw4-Width-Eq-40"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="onThumbTintColor">
+                                                <color key="value" red="0.84705882349999995" green="0.1058823529" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                                                <color key="value" white="0.66600000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1049" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Switch-4" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="sw4-label" userLabel="sw4-label">
+                                        <rect key="frame" x="0.0" y="155" width="60" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="sw4-label-Height-Eq-31"/>
+                                            <constraint firstAttribute="width" constant="60" id="sw4-label-Width-Eq-60"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="underline" translatesAutoresizingMaskIntoConstraints="NO" id="sw5-backView" userLabel="sw5-backView">
+                                        <rect key="frame" x="62" y="186" width="150" height="31"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sw5" userLabel="sw5" customClass="SevenSwitch" customModule="UIDemo" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="186" width="150" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="sw5-Height-Eq-31"/>
+                                            <constraint firstAttribute="width" constant="150" id="sw5-Width-Eq-150"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="onThumbTintColor">
+                                                <color key="value" red="0.84705882349999995" green="0.1058823529" blue="0.37647058820000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                                <color key="value" white="0.66600000000000004" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
+                                                <color key="value" white="0.66600000000000004" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                                                <color key="value" white="0.66600000000000004" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66600000000000004" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="ic_launcher_round"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1050" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Switch" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="sw5-label" userLabel="sw5-label">
+                                        <rect key="frame" x="0.0" y="186" width="42" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="sw5-label-Height-Eq-31"/>
+                                            <constraint firstAttribute="width" constant="42" id="sw5-label-Width-Eq-42"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" name="colorAccent"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1051" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="* Toggle Button demo" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tvTitle2" userLabel="tvTitle2">
+                                        <rect key="frame" x="0.0" y="252" width="231" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="tvTitle2-Height-Eq-34"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1052" contentMode="scaleToFill" verticalHuggingPriority="350" text="???" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="toggleButton" userLabel="toggleButton">
+                                        <rect key="frame" x="0.0" y="286" width="414" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="toggleButton-Height-Eq-48"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1053" contentMode="scaleToFill" horizontalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="subView1" userLabel="subView1">
+                                        <rect key="frame" x="0.0" y="334" width="414" height="94"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1054" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="???" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="toggleButton2" userLabel="toggleButton2">
+                                                <rect key="frame" x="10" y="10" width="111" height="74"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="74" id="toggleButton2-Height-Eq-74"/>
+                                                    <constraint firstAttribute="width" constant="111" id="toggleButton2-Width-Eq-111"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                <color key="textColor" name="colorAccent"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1055" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="???" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="toggleButton3" userLabel="toggleButton3">
+                                                <rect key="frame" x="141" y="23" width="88" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="toggleButton3-Height-Eq-48"/>
+                                                    <constraint firstAttribute="width" constant="88" id="toggleButton3-Width-Eq-88"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <color key="textColor" name="colorAccent"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="94" id="subView1-Height-Eq-94"/>
+                                            <constraint firstAttribute="height" priority="200" constant="94" id="subView1-Height-placeHolder"/>
+                                            <constraint firstItem="toggleButton2" firstAttribute="leading" secondItem="subView1" secondAttribute="leading" constant="10" id="toggleButton2-leading-subView1" userLabel="toggleButton2-leading-subView1"/>
+                                            <constraint firstItem="toggleButton2" firstAttribute="bottom" secondItem="subView1" secondAttribute="bottom" constant="-10" id="toggleButton2-matchBottom-subView1" userLabel="toggleButton2-matchBottom-subView1"/>
+                                            <constraint firstItem="toggleButton2" firstAttribute="top" secondItem="subView1" secondAttribute="top" constant="10" id="toggleButton2-top-subView1" userLabel="toggleButton2-top-subView1"/>
+                                            <constraint firstItem="toggleButton3" firstAttribute="bottom" secondItem="subView1" secondAttribute="bottom" constant="-23" id="toggleButton3-matchBottom-subView1" userLabel="toggleButton3-matchBottom-subView1"/>
+                                            <constraint firstItem="toggleButton3" firstAttribute="left" secondItem="toggleButton2" secondAttribute="right" constant="20" id="toggleButton3-toRightOf-toggleButton2" userLabel="toggleButton3-toRightOf-toggleButton2"/>
+                                            <constraint firstItem="toggleButton3" firstAttribute="top" secondItem="subView1" secondAttribute="top" constant="23" id="toggleButton3-top-subView1" userLabel="toggleButton3-top-subView1"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1056" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="* Image Button demo" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tvTitle3" userLabel="tvTitle3">
+                                        <rect key="frame" x="0.0" y="463" width="225.66666666666666" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="tvTitle3-Height-Eq-34"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1057" contentMode="scaleToFill" horizontalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="subview3" userLabel="subview3">
+                                        <rect key="frame" x="0.0" y="497" width="414" height="108"/>
+                                        <subviews>
+                                            <button tag="1058" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imageButton1" userLabel="imageButton1">
+                                                <rect key="frame" x="30" y="30" width="48" height="48"/>
+                                                <color key="backgroundColor" name="colorAccent"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="imageButton1-Height-Eq-48"/>
+                                                    <constraint firstAttribute="width" constant="48" id="imageButton1-Width-Eq-48"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" image="ic_launcher">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="disabled" title="">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button tag="1059" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imageButton3" userLabel="imageButton3">
+                                                <rect key="frame" x="98" y="10" width="88" height="88"/>
+                                                <color key="backgroundColor" name="colorAccent"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="88" id="imageButton3-Height-Eq-88"/>
+                                                    <constraint firstAttribute="width" constant="88" id="imageButton3-Width-Eq-88"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                <state key="normal" image="ic_launcher">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="disabled" title="">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button tag="1060" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imageButton2" userLabel="imageButton2">
+                                                <rect key="frame" x="206" y="19" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="imageButton2-Height-Eq-70"/>
+                                                    <constraint firstAttribute="width" constant="70" id="imageButton2-Width-Eq-70"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" image="ic_launcher" backgroundImage="underline">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="disabled" title="">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="highlighted" title="">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="imageButton1" firstAttribute="leading" secondItem="subview3" secondAttribute="leading" constant="30" id="imageButton1-alignLeading-withContainer" userLabel="imageButton1-alignLeading-withContainer"/>
+                                            <constraint firstItem="imageButton1" firstAttribute="top" secondItem="subview3" secondAttribute="top" constant="30" id="imageButton1-top-subview3" userLabel="imageButton1-top-subview3"/>
+                                            <constraint firstItem="imageButton2" firstAttribute="bottom" secondItem="subview3" secondAttribute="bottom" constant="-19" id="imageButton2-alignBottom-withContainer" userLabel="imageButton2-alignBottom-withContainer"/>
+                                            <constraint firstItem="imageButton2" firstAttribute="left" secondItem="imageButton3" secondAttribute="right" constant="20" id="imageButton2-toRightOf-imageButton3" userLabel="imageButton2-toRightOf-imageButton3"/>
+                                            <constraint firstItem="imageButton3" firstAttribute="left" secondItem="imageButton1" secondAttribute="right" constant="20" id="imageButton3-toRightOf-imageButton1" userLabel="imageButton3-toRightOf-imageButton1"/>
+                                            <constraint firstItem="imageButton3" firstAttribute="top" secondItem="subview3" secondAttribute="top" constant="10" id="imageButton3-top-subview3" userLabel="imageButton3-top-subview3"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="108" id="subview3-Height-Eq-108"/>
+                                            <constraint firstAttribute="height" priority="200" constant="108" id="subview3-Height-placeHolder"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="subView1" firstAttribute="top" secondItem="toggleButton" secondAttribute="bottom" id="subView1-below-toggleButton" userLabel="subView1-below-toggleButton"/>
+                                    <constraint firstItem="subView1" firstAttribute="leading" secondItem="rootView" secondAttribute="leading" id="subView1-matchLeading-rootView" userLabel="subView1-matchLeading-rootView"/>
+                                    <constraint firstItem="subView1" firstAttribute="trailing" secondItem="rootView" secondAttribute="trailing" id="subView1-matchTrailing-rootView" userLabel="subView1-matchTrailing-rootView"/>
+                                    <constraint firstItem="subview3" firstAttribute="top" secondItem="tvTitle3" secondAttribute="bottom" id="subview3-below-tvTitle3" userLabel="subview3-below-tvTitle3"/>
+                                    <constraint firstItem="subview3" firstAttribute="leading" secondItem="rootView" secondAttribute="leading" id="subview3-matchLeading-rootView" userLabel="subview3-matchLeading-rootView"/>
+                                    <constraint firstItem="subview3" firstAttribute="trailing" secondItem="rootView" secondAttribute="trailing" id="subview3-matchTrailing-rootView" userLabel="subview3-matchTrailing-rootView"/>
+                                    <constraint firstItem="sw1-backView" firstAttribute="leading" secondItem="sw1-label" secondAttribute="leading" id="sw1-backView-matchLeading-sw1-label"/>
+                                    <constraint firstItem="sw1-backView" firstAttribute="top" secondItem="sw1-label" secondAttribute="top" id="sw1-backView-matchTop-sw1-label"/>
+                                    <constraint firstItem="sw1-backView" firstAttribute="bottom" secondItem="sw1-label" secondAttribute="bottom" id="sw1-backView-matchbottom-sw1-label"/>
+                                    <constraint firstItem="sw1-backView" firstAttribute="trailing" secondItem="sw1" secondAttribute="trailing" id="sw1-backView-matchtrailing-sw1"/>
+                                    <constraint firstItem="sw1-label" firstAttribute="top" secondItem="tvTitle" secondAttribute="bottom" id="sw1-label-below-tvTitle" userLabel="sw1-label-below-tvTitle"/>
+                                    <constraint firstItem="sw1-label" firstAttribute="leading" secondItem="rootView" secondAttribute="leading" id="sw1-label-leading-rootView" userLabel="sw1-label-leading-rootView"/>
+                                    <constraint firstItem="sw1" firstAttribute="leading" secondItem="sw1-label" secondAttribute="trailing" id="sw1-matchLeading-sw1-label"/>
+                                    <constraint firstItem="sw1" firstAttribute="top" secondItem="sw1-label" secondAttribute="top" id="sw1-matchTop-sw1-label"/>
+                                    <constraint firstItem="sw2-backView" firstAttribute="leading" secondItem="sw2" secondAttribute="leading" id="sw2-backView-matchLeading-sw2"/>
+                                    <constraint firstItem="sw2-backView" firstAttribute="top" secondItem="sw2-label" secondAttribute="top" id="sw2-backView-matchTop-sw2-label"/>
+                                    <constraint firstItem="sw2-backView" firstAttribute="bottom" secondItem="sw2-label" secondAttribute="bottom" id="sw2-backView-matchbottom-sw2-label"/>
+                                    <constraint firstItem="sw2-backView" firstAttribute="trailing" secondItem="sw2-label" secondAttribute="trailing" id="sw2-backView-matchtrailing-sw2-label"/>
+                                    <constraint firstItem="sw2-label" firstAttribute="top" secondItem="sw1" secondAttribute="bottom" id="sw2-label-below-sw1" userLabel="sw2-label-below-sw1"/>
+                                    <constraint firstItem="sw2-label" firstAttribute="leading" secondItem="rootView" secondAttribute="leading" constant="130" id="sw2-label-leading-rootView" userLabel="sw2-label-leading-rootView"/>
+                                    <constraint firstItem="sw2" firstAttribute="trailing" secondItem="sw2-label" secondAttribute="leading" constant="-90" id="sw2-matchLeading-sw2-label"/>
+                                    <constraint firstItem="sw2" firstAttribute="top" secondItem="sw2-label" secondAttribute="top" id="sw2-matchTop-sw2-label"/>
+                                    <constraint firstItem="sw3-backView" firstAttribute="leading" secondItem="sw3-label" secondAttribute="leading" id="sw3-backView-matchLeading-sw3-label"/>
+                                    <constraint firstItem="sw3-backView" firstAttribute="top" secondItem="sw3-label" secondAttribute="top" id="sw3-backView-matchTop-sw3-label"/>
+                                    <constraint firstItem="sw3-backView" firstAttribute="bottom" secondItem="sw3-label" secondAttribute="bottom" id="sw3-backView-matchbottom-sw3-label"/>
+                                    <constraint firstItem="sw3-backView" firstAttribute="trailing" secondItem="sw3" secondAttribute="trailing" id="sw3-backView-matchtrailing-sw3"/>
+                                    <constraint firstItem="sw3-label" firstAttribute="top" secondItem="sw2" secondAttribute="bottom" constant="20" id="sw3-label-below-sw2" userLabel="sw3-label-below-sw2"/>
+                                    <constraint firstItem="sw3-label" firstAttribute="leading" secondItem="rootView" secondAttribute="leading" constant="20" id="sw3-label-leading-rootView" userLabel="sw3-label-leading-rootView"/>
+                                    <constraint firstItem="sw3" firstAttribute="leading" secondItem="sw3-label" secondAttribute="trailing" constant="80" id="sw3-matchLeading-sw3-label"/>
+                                    <constraint firstItem="sw3" firstAttribute="top" secondItem="sw3-label" secondAttribute="top" id="sw3-matchTop-sw3-label"/>
+                                    <constraint firstItem="sw4-backView" firstAttribute="leading" secondItem="sw4-label" secondAttribute="leading" id="sw4-backView-matchLeading-sw4-label"/>
+                                    <constraint firstItem="sw4-backView" firstAttribute="top" secondItem="sw4-label" secondAttribute="top" id="sw4-backView-matchTop-sw4-label"/>
+                                    <constraint firstItem="sw4-backView" firstAttribute="bottom" secondItem="sw4-label" secondAttribute="bottom" id="sw4-backView-matchbottom-sw4-label"/>
+                                    <constraint firstItem="sw4-backView" firstAttribute="trailing" secondItem="sw4" secondAttribute="trailing" id="sw4-backView-matchtrailing-sw4"/>
+                                    <constraint firstItem="sw4-label" firstAttribute="top" secondItem="sw3" secondAttribute="bottom" constant="20" id="sw4-label-below-sw3" userLabel="sw4-label-below-sw3"/>
+                                    <constraint firstItem="sw4-label" firstAttribute="leading" secondItem="rootView" secondAttribute="leading" id="sw4-label-leading-rootView" userLabel="sw4-label-leading-rootView"/>
+                                    <constraint firstItem="sw4" firstAttribute="leading" secondItem="sw4-label" secondAttribute="trailing" id="sw4-matchLeading-sw4-label"/>
+                                    <constraint firstItem="sw4" firstAttribute="top" secondItem="sw4-label" secondAttribute="top" id="sw4-matchTop-sw4-label"/>
+                                    <constraint firstItem="sw5-backView" firstAttribute="leading" secondItem="sw5" secondAttribute="leading" id="sw5-backView-matchLeading-sw5-label"/>
+                                    <constraint firstItem="sw5-backView" firstAttribute="top" secondItem="sw5-label" secondAttribute="top" id="sw5-backView-matchTop-sw5-label"/>
+                                    <constraint firstItem="sw5-backView" firstAttribute="bottom" secondItem="sw5-label" secondAttribute="bottom" id="sw5-backView-matchbottom-sw5-label"/>
+                                    <constraint firstItem="sw5-backView" firstAttribute="trailing" secondItem="sw5" secondAttribute="trailing" id="sw5-backView-matchtrailing-sw5"/>
+                                    <constraint firstItem="sw5-label" firstAttribute="top" secondItem="sw4" secondAttribute="bottom" id="sw5-label-below-sw4" userLabel="sw5-label-below-sw4"/>
+                                    <constraint firstItem="sw5-label" firstAttribute="leading" secondItem="rootView" secondAttribute="leading" id="sw5-label-leading-rootView" userLabel="sw5-label-leading-rootView"/>
+                                    <constraint firstItem="sw5" firstAttribute="leading" secondItem="sw5-label" secondAttribute="trailing" constant="20" id="sw5-matchLeading-sw5-label"/>
+                                    <constraint firstItem="sw5" firstAttribute="top" secondItem="sw5-label" secondAttribute="top" id="sw5-matchTop-sw5-label"/>
+                                    <constraint firstItem="toggleButton" firstAttribute="top" secondItem="tvTitle2" secondAttribute="bottom" id="toggleButton-below-tvTitle2" userLabel="toggleButton-below-tvTitle2"/>
+                                    <constraint firstItem="toggleButton" firstAttribute="leading" secondItem="rootView" secondAttribute="leading" id="toggleButton-leading-rootView" userLabel="toggleButton-leading-rootView"/>
+                                    <constraint firstItem="toggleButton" firstAttribute="trailing" secondItem="rootView" secondAttribute="trailing" id="toggleButton-matchTrailing-rootView" userLabel="toggleButton-matchTrailing-rootView"/>
+                                    <constraint firstItem="tvTitle" firstAttribute="top" secondItem="rootView" secondAttribute="top" id="tvTitle-alignTop-withContainer" userLabel="tvTitle-alignTop-withContainer"/>
+                                    <constraint firstItem="tvTitle" firstAttribute="leading" secondItem="rootView" secondAttribute="leading" id="tvTitle-leading-rootView" userLabel="tvTitle-leading-rootView"/>
+                                    <constraint firstItem="tvTitle2" firstAttribute="top" secondItem="sw5" secondAttribute="bottom" constant="35" id="tvTitle2-below-sw5" userLabel="tvTitle2-below-sw5"/>
+                                    <constraint firstItem="tvTitle2" firstAttribute="leading" secondItem="rootView" secondAttribute="leading" id="tvTitle2-leading-rootView" userLabel="tvTitle2-leading-rootView"/>
+                                    <constraint firstItem="tvTitle3" firstAttribute="top" secondItem="subView1" secondAttribute="bottom" constant="35" id="tvTitle3-below-subView1" userLabel="tvTitle3-below-subView1"/>
+                                    <constraint firstItem="tvTitle3" firstAttribute="leading" secondItem="rootView" secondAttribute="leading" id="tvTitle3-leading-rootView" userLabel="tvTitle3-leading-rootView"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SwitchActivity-View-safeArea" firstAttribute="bottom" secondItem="rootView" secondAttribute="bottom" id="3G6-Qb-Lwb"/>
+                            <constraint firstItem="rootView" firstAttribute="leading" secondItem="SwitchActivity-View-safeArea" secondAttribute="leading" id="rootView-matchLeading-SwitchActivity-View-safeArea" userLabel="rootView-matchLeading-SwitchActivity-View-safeArea"/>
+                            <constraint firstItem="rootView" firstAttribute="top" secondItem="SwitchActivity-View-safeArea" secondAttribute="top" id="rootView-matchTop-SwitchActivity-View-safeArea" userLabel="rootView-matchTop-SwitchActivity-View-safeArea"/>
+                            <constraint firstItem="rootView" firstAttribute="trailing" secondItem="SwitchActivity-View-safeArea" secondAttribute="trailing" id="rootView-matchTrailing-SwitchActivity-View-safeArea" userLabel="rootView-matchTrailing-SwitchActivity-View-safeArea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SwitchActivity-View-safeArea"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIDemo" id="SwitchActivity-VC-Nav-ID"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="600"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_launcher" width="48" height="48"/>
+        <image name="ic_launcher_round" width="20" height="20"/>
+        <image name="underline" width="72" height="31"/>
+        <namedColor name="colorAccent">
+            <color red="0.84705882352941175" green="0.10588235294117647" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -23,34 +23,10 @@ import UIKit
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-public class MainActivity : UIViewController {
-
-    @IBAction func SwitchClick(_ v: UIView?){
-        var intent_VC = UIStoryboard(name: "switch_page", bundle: nil).instantiateViewController(withIdentifier: "SwitchActivity-VC") as! SwitchActivity
-        self.navigationController?.pushViewController(intent_VC, animated: true)
-    }
-
-
-    @IBAction func ButtonClick(_ v: UIView?){
-        var intent_VC = UIStoryboard(name: "button", bundle: nil).instantiateViewController(withIdentifier: "ButtonActivity-VC") as! ButtonActivity
-        self.navigationController?.pushViewController(intent_VC, animated: true)
-    }
-
-
-    @IBAction func TextViewClick(_ v: UIView?){
-        var intent_VC = UIStoryboard(name: "text_view", bundle: nil).instantiateViewController(withIdentifier: "TextViewActivity-VC") as! TextViewActivity
-        self.navigationController?.pushViewController(intent_VC, animated: true)
-    }
-
-
-    @IBAction func EditTextClick(_ v: UIView?){
-        var intent_VC = UIStoryboard(name: "edit_text", bundle: nil).instantiateViewController(withIdentifier: "EditTextActivity-VC") as! EditTextActivity
-        self.navigationController?.pushViewController(intent_VC, animated: true)
-    }
-
-
+public class SwitchActivity : UIViewController {
+    
     override public func viewDidLoad(){
         super.viewDidLoad()
     }
-
+    
 }

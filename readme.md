@@ -19,13 +19,18 @@
 
 -----
 # Android UI Layout and Widgets demo
-This project demonstrate the porting of various Layout and Widgets controls used in Android project.
+This project demonstrate the porting of various widgets and controls used in Android project.
 This repository contains the Android source code which was used as input and generated iOS source code project.
+
+* New Additions - Switch, ImageButton, ToggleButton
 
 Following UI Widgets are supported - 
 
 | Widgets | Features |
 |---------|------------|
+| Switch | Thumb image, Thumb tint, Shadow Color, Track image, Switch Width, Switch Padding, Enabled, Background |
+| ImageButton | Source image, Background |
+| ToggleButton | Implementation is pending, UILabel is used as substitute |
 | Button | Dimension, Alpha, Text Color, Text size, Text Style, Padding, Button states |
 | TextView | Gravity, Ellipsize, Text size, Text Style, System Fonts | 
 | EditText | Keyboard type - Plain, Password, E-Mail, Phone, Time, Number, Action button text | 
@@ -35,6 +40,7 @@ Following UI Widgets are supported -
 ## Statement Estimation
 | File | Statement |
 |---------|------------|
+| switch_page.xml | 449 |
 | main_page.xml | 204 |
 | button.xml | 700 |
 | text_view.xml | 605 |
@@ -43,11 +49,28 @@ Following UI Widgets are supported -
 | strings.xml | 1 |
 | AppIcon | 50 |
 | XCode Project | 445 |
-| **Total** | **2368** |
+| **Total** | **2817** |
 
 -----
 
 ## Screen shots
+
+Screen shot of Switch, ImageButton, ToggleButton - 
+<img src="/Visuals/UI-Demo_Switch.jpg" alt="Switch Screenshot"/>
+
+# Dev Notes
+* Switch
+  - The UISwitch control from iOS SDK do not provide many features present  in the android control
+  - Therefore open source custom control 'SevenSwitch' is used.
+      [SevenSwitch](https://github.com/bvogelzang/SevenSwitch) is a iOS7 style drop in replacement for UISwitch
+      Thanks to 'Ben Vogelzang' to make this code available under the MIT License.
+
+* ToggleButton
+  - This control is not yet implemented
+  - For such controls, the UILabel is used as substitute with text "???". 
+  - The AutoLayout constraints are generated
+
+-----
 
 Screen shot of Button - 
 <img src="/Visuals/UI-Demo_Button.jpg" alt="Button Screenshot"/>
@@ -65,7 +88,7 @@ Screen shot of EditText with plain keyboard -
 Screen shot of EditText with email keyboard - 
 <img src="/Visuals/UI-Demo_EditText-Email.jpg" alt="EditText email keyboard"/>
 
-Screen shot of EditText with phone dialer keyboard - 
+Screen shot of EditText with phone dialler keyboard - 
 <img src="/Visuals/UI-Demo_EditText-Phone.jpg" alt="EditText phone dialler keyboard"/>
 
 -----

@@ -184,13 +184,12 @@
                                     <constraint firstItem="et-demo-4" firstAttribute="leading" secondItem="background" secondAttribute="leading" id="et-demo-4-matchLeading-background" userLabel="et-demo-4-matchLeading-background"/>
                                     <constraint firstItem="et-demo-4" firstAttribute="trailing" secondItem="background" secondAttribute="trailing" id="et-demo-4-matchTrailing-background" userLabel="et-demo-4-matchTrailing-background"/>
                                 </constraints>
-                            </view>
-                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
-                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
-                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="background-Height-Eq-506"/>
+                                        <exclude reference="background-Height-placeHolder"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -198,10 +197,7 @@
                             <constraint firstItem="background" firstAttribute="leading" secondItem="EditTextActivity-View-safeArea" secondAttribute="leading" constant="4" id="background-matchLeading-EditTextActivity-View-safeArea" userLabel="background-matchLeading-EditTextActivity-View-safeArea"/>
                             <constraint firstItem="background" firstAttribute="top" secondItem="EditTextActivity-View-safeArea" secondAttribute="top" id="background-matchTop-EditTextActivity-View-safeArea" userLabel="background-matchTop-EditTextActivity-View-safeArea"/>
                             <constraint firstItem="background" firstAttribute="trailing" secondItem="EditTextActivity-View-safeArea" secondAttribute="trailing" constant="-4" id="background-matchTrailing-EditTextActivity-View-safeArea" userLabel="background-matchTrailing-EditTextActivity-View-safeArea"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="EditTextActivity-View-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="EditTextActivity-View-safeArea" secondAttribute="leading" id="footer-match-leading"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="background" secondAttribute="bottom" id="footer-match-top-background" userLabel="footer-match-top-background"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="EditTextActivity-View-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
+                            <constraint firstItem="EditTextActivity-View-safeArea" firstAttribute="bottom" secondItem="background" secondAttribute="bottom" id="yTr-VP-7Uk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EditTextActivity-View-safeArea"/>
                     </view>

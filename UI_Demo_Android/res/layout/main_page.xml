@@ -42,10 +42,9 @@
         android:id="@+id/btnSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="SwitchClick"
-        android:text="Switch"
         android:textAlignment="textStart"
-        android:visibility="invisible" />
-
+        android:text="Switch"
+        android:onClick="SwitchClick"
+         />
 
 </LinearLayout>
