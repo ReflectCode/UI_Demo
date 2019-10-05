@@ -58,12 +58,12 @@ Following UI Widgets are supported -
 Screen shot of Switch, ImageButton, ToggleButton - 
 <img src="/Visuals/UI-Demo_Switch.jpg" alt="Switch Screenshot"/>
 
-# Dev Notes
+### Dev Notes
 * Switch
   - The UISwitch control from iOS SDK do not provide many features present  in the android control
   - Therefore open source custom control 'SevenSwitch' is used.
-      [SevenSwitch](https://github.com/bvogelzang/SevenSwitch) is a iOS7 style drop in replacement for UISwitch
-      Thanks to 'Ben Vogelzang' to make this code available under the MIT License.
+  - [SevenSwitch](https://github.com/bvogelzang/SevenSwitch) is a iOS7 style drop in replacement for UISwitch
+  - Thanks to ['Ben Vogelzang'](https://github.com/bvogelzang) to make this code available under the MIT License.
 
 * ToggleButton
   - This control is not yet implemented
