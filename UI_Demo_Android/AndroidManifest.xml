@@ -29,6 +29,9 @@
         <activity android:name=".TextViewActivity">
         </activity>
 
+        <activity android:name=".CardViewActivity">
+        </activity>
+
     </application>
 
 </manifest>

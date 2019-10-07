@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UIDemo-NavControl">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DNV-xg-evK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UIDemo-NavControl" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulm-4h-Ru3">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="colorPrimary"/>
+                        <textAttributes key="titleTextAttributes"/>
+                        <textAttributes key="largeTitleTextAttributes"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UIDemo-ToolBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="CardViewActivity-VC" kind="relationship" relationship="rootViewController" id="hC6-UQ-eHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccE-g8-4ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1122" y="600"/>
+        </scene>
+        <!--CardViewActivity-VC-->
+        <scene sceneID="CardViewActivity-VC-Scene">
+            <objects>
+                <viewController storyboardIdentifier="CardViewActivity-VC" id="CardViewActivity-VC" userLabel="CardViewActivity-VC" customClass="CardViewActivity" customModule="UIDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Root-View" id="CardViewActivity-View" userLabel="CardViewActivity-View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" clipsSubviews="YES" tag="1027" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="mainView" userLabel="mainView">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <subviews>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cvRoot1-backView" userLabel="cvRoot1-backView" customClass="RC_CardView" customModule="UIDemo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="150" height="184"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cardElevation">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1028" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" translatesAutoresizingMaskIntoConstraints="NO" id="cvRoot1" userLabel="cvRoot1" customClass="RC_CardView" customModule="UIDemo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="150" height="184"/>
+                                        <subviews>
+                                            <view opaque="NO" clipsSubviews="YES" tag="1029" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" translatesAutoresizingMaskIntoConstraints="NO" id="cvLayout1" userLabel="cvLayout1">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="184"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" tag="1030" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact_eight" translatesAutoresizingMaskIntoConstraints="NO" id="ivProfile1" userLabel="ivProfile1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="150" id="ivProfile1-Height-Eq-150"/>
+                                                            <constraint firstAttribute="width" constant="150" id="ivProfile1-Width-Eq-150"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1031" contentMode="scaleToFill" verticalHuggingPriority="350" text="Hello World!" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tvTitle1" userLabel="tvTitle1" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="150" width="150" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34" id="tvTitle1-Height-Eq-34"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                        <color key="textColor" name="colorPrimaryDark"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="184" id="cvLayout1-Height-Eq-184"/>
+                                                    <constraint firstAttribute="height" priority="200" constant="184" id="cvLayout1-Height-placeHolder"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="cvLayout1-Width-Eq-150"/>
+                                                    <constraint firstAttribute="width" priority="200" constant="150" id="cvLayout1-Width-placeHolder"/>
+                                                    <constraint firstItem="ivProfile1" firstAttribute="leading" secondItem="cvLayout1" secondAttribute="leading" id="ivProfile1-leading-cvLayout1" userLabel="ivProfile1-leading-cvLayout1"/>
+                                                    <constraint firstItem="ivProfile1" firstAttribute="top" secondItem="cvLayout1" secondAttribute="top" id="ivProfile1-top-cvLayout1" userLabel="ivProfile1-top-cvLayout1"/>
+                                                    <constraint firstItem="tvTitle1" firstAttribute="top" secondItem="ivProfile1" secondAttribute="bottom" id="tvTitle1-below-ivProfile1" userLabel="tvTitle1-below-ivProfile1"/>
+                                                    <constraint firstItem="tvTitle1" firstAttribute="leading" secondItem="cvLayout1" secondAttribute="leading" id="tvTitle1-leading-cvLayout1" userLabel="tvTitle1-leading-cvLayout1"/>
+                                                    <constraint firstItem="tvTitle1" firstAttribute="trailing" secondItem="cvLayout1" secondAttribute="trailing" id="tvTitle1-matchTrailing-cvLayout1" userLabel="tvTitle1-matchTrailing-cvLayout1"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="colorAccent"/>
+                                        <constraints>
+                                            <constraint firstItem="cvLayout1" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="cvRoot1" secondAttribute="trailing" id="cvLayout1-Trailing-LessThan-cvRoot1-Trailing" userLabel="cvLayout1-Trailing-LessThan-cvRoot1-Trailing"/>
+                                            <constraint firstItem="cvLayout1" firstAttribute="bottom" secondItem="cvRoot1" secondAttribute="bottom" id="cvLayout1-alignBottom-withContainer" userLabel="cvLayout1-alignBottom-withContainer"/>
+                                            <constraint firstItem="cvLayout1" firstAttribute="leading" secondItem="cvRoot1" secondAttribute="leading" id="cvLayout1-leading-cvRoot1" userLabel="cvLayout1-leading-cvRoot1"/>
+                                            <constraint firstItem="cvLayout1" firstAttribute="top" secondItem="cvRoot1" secondAttribute="top" id="cvLayout1-matchTop-cvRoot1" userLabel="cvLayout1-matchTop-cvRoot1"/>
+                                            <constraint firstItem="cvLayout1" firstAttribute="trailing" secondItem="cvRoot1" secondAttribute="trailing" priority="100" id="cvLayout1-trailing-max" userLabel="cvLayout1-trailing-max"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="184" id="cvRoot1-Height-Eq-184"/>
+                                            <constraint firstAttribute="height" priority="200" constant="184" id="cvRoot1-Height-placeHolder"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="cvRoot1-Width-Eq-150"/>
+                                            <constraint firstAttribute="width" priority="200" constant="150" id="cvRoot1-Width-placeHolder"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cvRoot2-backView" userLabel="cvRoot2-backView" customClass="RC_CardView" customModule="UIDemo" customModuleProvider="target">
+                                        <rect key="frame" x="190" y="20" width="120" height="154"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cardElevation">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1032" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" translatesAutoresizingMaskIntoConstraints="NO" id="cvRoot2" userLabel="cvRoot2" customClass="RC_CardView" customModule="UIDemo" customModuleProvider="target">
+                                        <rect key="frame" x="190" y="20" width="120" height="154"/>
+                                        <subviews>
+                                            <view opaque="NO" clipsSubviews="YES" tag="1033" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" translatesAutoresizingMaskIntoConstraints="NO" id="cvLayout2" userLabel="cvLayout2">
+                                                <rect key="frame" x="10" y="10" width="100" height="134"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" tag="1034" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact_eight" translatesAutoresizingMaskIntoConstraints="NO" id="ivProfile2" userLabel="ivProfile2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="ivProfile2-Height-Eq-100"/>
+                                                            <constraint firstAttribute="width" constant="100" id="ivProfile2-Width-Eq-100"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1035" contentMode="scaleToFill" verticalHuggingPriority="350" text="Hello" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tvTitle2" userLabel="tvTitle2" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="100" width="100" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34" id="tvTitle2-Height-Eq-34"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="134" id="cvLayout2-Height-Eq-134"/>
+                                                    <constraint firstAttribute="height" priority="200" constant="134" id="cvLayout2-Height-placeHolder"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="cvLayout2-Width-Eq-100"/>
+                                                    <constraint firstAttribute="width" priority="200" constant="100" id="cvLayout2-Width-placeHolder"/>
+                                                    <constraint firstItem="ivProfile2" firstAttribute="leading" secondItem="cvLayout2" secondAttribute="leading" id="ivProfile2-leading-cvLayout2" userLabel="ivProfile2-leading-cvLayout2"/>
+                                                    <constraint firstItem="ivProfile2" firstAttribute="top" secondItem="cvLayout2" secondAttribute="top" id="ivProfile2-top-cvLayout2" userLabel="ivProfile2-top-cvLayout2"/>
+                                                    <constraint firstItem="tvTitle2" firstAttribute="top" secondItem="ivProfile2" secondAttribute="bottom" id="tvTitle2-below-ivProfile2" userLabel="tvTitle2-below-ivProfile2"/>
+                                                    <constraint firstItem="tvTitle2" firstAttribute="leading" secondItem="cvLayout2" secondAttribute="leading" id="tvTitle2-leading-cvLayout2" userLabel="tvTitle2-leading-cvLayout2"/>
+                                                    <constraint firstItem="tvTitle2" firstAttribute="trailing" secondItem="cvLayout2" secondAttribute="trailing" id="tvTitle2-matchTrailing-cvLayout2" userLabel="tvTitle2-matchTrailing-cvLayout2"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="colorPrimaryDark"/>
+                                        <constraints>
+                                            <constraint firstItem="cvLayout2" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="cvRoot2" secondAttribute="trailing" constant="-8" id="cvLayout2-Trailing-LessThan-cvRoot2-Trailing" userLabel="cvLayout2-Trailing-LessThan-cvRoot2-Trailing"/>
+                                            <constraint firstItem="cvLayout2" firstAttribute="bottom" secondItem="cvRoot2" secondAttribute="bottom" constant="-10" id="cvLayout2-alignBottom-withContainer" userLabel="cvLayout2-alignBottom-withContainer"/>
+                                            <constraint firstItem="cvLayout2" firstAttribute="leading" secondItem="cvRoot2" secondAttribute="leading" constant="10" id="cvLayout2-leading-cvRoot2" userLabel="cvLayout2-leading-cvRoot2"/>
+                                            <constraint firstItem="cvLayout2" firstAttribute="top" secondItem="cvRoot2" secondAttribute="top" constant="10" id="cvLayout2-matchTop-cvRoot2" userLabel="cvLayout2-matchTop-cvRoot2"/>
+                                            <constraint firstItem="cvLayout2" firstAttribute="trailing" secondItem="cvRoot2" secondAttribute="trailing" priority="100" constant="-10" id="cvLayout2-trailing-max" userLabel="cvLayout2-trailing-max"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="154" id="cvRoot2-Height-Eq-154"/>
+                                            <constraint firstAttribute="height" priority="200" constant="154" id="cvRoot2-Height-placeHolder"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="cvRoot2-Width-Eq-120"/>
+                                            <constraint firstAttribute="width" priority="200" constant="120" id="cvRoot2-Width-placeHolder"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cvRoot1-backView" firstAttribute="height" secondItem="cvRoot1" secondAttribute="height" id="cvRoot1-backView-matchHeight-cvRoot1"/>
+                                    <constraint firstItem="cvRoot1-backView" firstAttribute="leading" secondItem="cvRoot1" secondAttribute="leading" id="cvRoot1-backView-matchLeading-cvRoot1"/>
+                                    <constraint firstItem="cvRoot1-backView" firstAttribute="top" secondItem="cvRoot1" secondAttribute="top" id="cvRoot1-backView-matchTop-cvRoot1"/>
+                                    <constraint firstItem="cvRoot1-backView" firstAttribute="width" secondItem="cvRoot1" secondAttribute="width" id="cvRoot1-backView-matchWidth-cvRoot1"/>
+                                    <constraint firstItem="cvRoot1" firstAttribute="leading" secondItem="mainView" secondAttribute="leading" constant="10" id="cvRoot1-leading-mainView" userLabel="cvRoot1-leading-mainView"/>
+                                    <constraint firstItem="cvRoot1" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="mainView" secondAttribute="bottom" constant="-8" id="cvRoot1-matchBottom-mainView" userLabel="cvRoot1-matchBottom-mainView"/>
+                                    <constraint firstItem="cvRoot1" firstAttribute="top" secondItem="mainView" secondAttribute="top" constant="10" id="cvRoot1-matchTop-mainView" userLabel="cvRoot1-matchTop-mainView"/>
+                                    <constraint firstItem="cvRoot2" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="mainView" secondAttribute="trailing" constant="-8" id="cvRoot2-Trailing-LessThan-mainView-Trailing" userLabel="cvRoot2-Trailing-LessThan-mainView-Trailing"/>
+                                    <constraint firstItem="cvRoot2" firstAttribute="bottom" secondItem="mainView" secondAttribute="bottom" constant="-498" id="cvRoot2-alignBottom-withContainer" userLabel="cvRoot2-alignBottom-withContainer"/>
+                                    <constraint firstItem="cvRoot2-backView" firstAttribute="height" secondItem="cvRoot2" secondAttribute="height" id="cvRoot2-backView-matchHeight-cvRoot2"/>
+                                    <constraint firstItem="cvRoot2-backView" firstAttribute="leading" secondItem="cvRoot2" secondAttribute="leading" id="cvRoot2-backView-matchLeading-cvRoot2"/>
+                                    <constraint firstItem="cvRoot2-backView" firstAttribute="top" secondItem="cvRoot2" secondAttribute="top" id="cvRoot2-backView-matchTop-cvRoot2"/>
+                                    <constraint firstItem="cvRoot2-backView" firstAttribute="width" secondItem="cvRoot2" secondAttribute="width" id="cvRoot2-backView-matchWidth-cvRoot2"/>
+                                    <constraint firstItem="cvRoot2" firstAttribute="left" secondItem="cvRoot1" secondAttribute="right" constant="30" id="cvRoot2-toRightOf-cvRoot1" userLabel="cvRoot2-toRightOf-cvRoot1"/>
+                                    <constraint firstItem="cvRoot2" firstAttribute="top" secondItem="mainView" secondAttribute="top" constant="20" id="cvRoot2-top-mainView" userLabel="cvRoot2-top-mainView"/>
+                                    <constraint firstItem="cvRoot2" firstAttribute="trailing" secondItem="mainView" secondAttribute="trailing" priority="100" constant="-104" id="cvRoot2-trailing-max" userLabel="cvRoot2-trailing-max"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cvRoot2-alignBottom-withContainer"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
+                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="CardViewActivity-View-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="CardViewActivity-View-safeArea" secondAttribute="leading" id="footer-match-leading"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="mainView" secondAttribute="bottom" id="footer-match-top-mainView" userLabel="footer-match-top-mainView"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="CardViewActivity-View-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
+                            <constraint firstItem="mainView" firstAttribute="leading" secondItem="CardViewActivity-View-safeArea" secondAttribute="leading" id="mainView-matchLeading-CardViewActivity-View-safeArea" userLabel="mainView-matchLeading-CardViewActivity-View-safeArea"/>
+                            <constraint firstItem="mainView" firstAttribute="top" secondItem="CardViewActivity-View-safeArea" secondAttribute="top" id="mainView-matchTop-CardViewActivity-View-safeArea" userLabel="mainView-matchTop-CardViewActivity-View-safeArea"/>
+                            <constraint firstItem="mainView" firstAttribute="trailing" secondItem="CardViewActivity-View-safeArea" secondAttribute="trailing" id="mainView-matchTrailing-CardViewActivity-View-safeArea" userLabel="mainView-matchTrailing-CardViewActivity-View-safeArea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CardViewActivity-View-safeArea"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIDemo" id="CardViewActivity-VC-Nav-ID"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="600"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="contact_eight" width="271" height="274"/>
+        <namedColor name="colorAccent">
+            <color red="0.84705882352941175" green="0.10588235294117647" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorPrimaryDark">
+            <color red="0.0" green="0.3411764705882353" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

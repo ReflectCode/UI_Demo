@@ -43,10 +43,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" clipsSubviews="YES" tag="1038" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1038" userLabel="RC-ID-1038">
+                            <view opaque="NO" clipsSubviews="YES" tag="1047" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1047" userLabel="RC-ID-1047">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1039" contentMode="scaleToFill" verticalHuggingPriority="350" text="UI Widget Demo" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="textView" userLabel="textView">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1048" contentMode="scaleToFill" verticalHuggingPriority="350" text="UI Widget Demo" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="textView" userLabel="textView" customClass="RC_UILabel" customModule="UIDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="textView-Height-Eq-41"/>
@@ -54,7 +54,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
-                                    <button opaque="NO" tag="1040" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnButton" userLabel="btnButton">
+                                    <button opaque="NO" tag="1049" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnButton" userLabel="btnButton">
                                         <rect key="frame" x="0.0" y="41" width="414" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="btnButton-Height-Eq-48"/>
@@ -77,7 +77,7 @@
                                             <action selector="ButtonClick:" destination="MainActivity-VC" eventType="touchUpInside" id="btnButton-ButtonClick"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1041" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnTextView" userLabel="btnTextView">
+                                    <button opaque="NO" tag="1050" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnTextView" userLabel="btnTextView">
                                         <rect key="frame" x="0.0" y="89" width="414" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="btnTextView-Height-Eq-48"/>
@@ -100,7 +100,7 @@
                                             <action selector="TextViewClick:" destination="MainActivity-VC" eventType="touchUpInside" id="btnTextView-TextViewClick"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1042" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnEditText" userLabel="btnEditText">
+                                    <button opaque="NO" tag="1051" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnEditText" userLabel="btnEditText">
                                         <rect key="frame" x="0.0" y="137" width="414" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="btnEditText-Height-Eq-48"/>
@@ -123,7 +123,7 @@
                                             <action selector="EditTextClick:" destination="MainActivity-VC" eventType="touchUpInside" id="btnEditText-EditTextClick"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1043" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnSwitch" userLabel="btnSwitch">
+                                    <button opaque="NO" tag="1052" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnSwitch" userLabel="btnSwitch">
                                         <rect key="frame" x="0.0" y="185" width="414" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="btnSwitch-Height-Eq-48"/>
@@ -146,33 +146,69 @@
                                             <action selector="SwitchClick:" destination="MainActivity-VC" eventType="touchUpInside" id="btnSwitch-SwitchClick"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" tag="1053" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnCardView" userLabel="btnCardView">
+                                        <rect key="frame" x="0.0" y="233" width="414" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="btnCardView-Height-Eq-48"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Card View" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Card View" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Card View" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Card View" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="CardViewClick:" destination="MainActivity-VC" eventType="touchUpInside" id="btnCardView-CardViewClick"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="btnButton" firstAttribute="trailing" secondItem="RC-ID-1038" secondAttribute="trailing" id="btnButton-alignTrailing-withContainer" userLabel="btnButton-alignTrailing-withContainer"/>
+                                    <constraint firstItem="btnButton" firstAttribute="trailing" secondItem="RC-ID-1047" secondAttribute="trailing" id="btnButton-alignTrailing-withContainer" userLabel="btnButton-alignTrailing-withContainer"/>
                                     <constraint firstItem="btnButton" firstAttribute="top" secondItem="textView" secondAttribute="bottom" id="btnButton-below-textView" userLabel="btnButton-below-textView"/>
-                                    <constraint firstItem="btnButton" firstAttribute="leading" secondItem="RC-ID-1038" secondAttribute="leading" id="btnButton-matchLeading-RC-ID-1038" userLabel="btnButton-matchLeading-RC-ID-1038"/>
-                                    <constraint firstItem="btnEditText" firstAttribute="trailing" secondItem="RC-ID-1038" secondAttribute="trailing" id="btnEditText-alignTrailing-withContainer" userLabel="btnEditText-alignTrailing-withContainer"/>
+                                    <constraint firstItem="btnButton" firstAttribute="leading" secondItem="RC-ID-1047" secondAttribute="leading" id="btnButton-matchLeading-RC-ID-1047" userLabel="btnButton-matchLeading-RC-ID-1047"/>
+                                    <constraint firstItem="btnCardView" firstAttribute="trailing" secondItem="RC-ID-1047" secondAttribute="trailing" id="btnCardView-alignTrailing-withContainer" userLabel="btnCardView-alignTrailing-withContainer"/>
+                                    <constraint firstItem="btnCardView" firstAttribute="top" secondItem="btnSwitch" secondAttribute="bottom" id="btnCardView-below-btnSwitch" userLabel="btnCardView-below-btnSwitch"/>
+                                    <constraint firstItem="btnCardView" firstAttribute="leading" secondItem="RC-ID-1047" secondAttribute="leading" id="btnCardView-matchLeading-RC-ID-1047" userLabel="btnCardView-matchLeading-RC-ID-1047"/>
+                                    <constraint firstItem="btnEditText" firstAttribute="trailing" secondItem="RC-ID-1047" secondAttribute="trailing" id="btnEditText-alignTrailing-withContainer" userLabel="btnEditText-alignTrailing-withContainer"/>
                                     <constraint firstItem="btnEditText" firstAttribute="top" secondItem="btnTextView" secondAttribute="bottom" id="btnEditText-below-btnTextView" userLabel="btnEditText-below-btnTextView"/>
-                                    <constraint firstItem="btnEditText" firstAttribute="leading" secondItem="RC-ID-1038" secondAttribute="leading" id="btnEditText-matchLeading-RC-ID-1038" userLabel="btnEditText-matchLeading-RC-ID-1038"/>
-                                    <constraint firstItem="btnSwitch" firstAttribute="trailing" secondItem="RC-ID-1038" secondAttribute="trailing" id="btnSwitch-alignTrailing-withContainer" userLabel="btnSwitch-alignTrailing-withContainer"/>
+                                    <constraint firstItem="btnEditText" firstAttribute="leading" secondItem="RC-ID-1047" secondAttribute="leading" id="btnEditText-matchLeading-RC-ID-1047" userLabel="btnEditText-matchLeading-RC-ID-1047"/>
+                                    <constraint firstItem="btnSwitch" firstAttribute="trailing" secondItem="RC-ID-1047" secondAttribute="trailing" id="btnSwitch-alignTrailing-withContainer" userLabel="btnSwitch-alignTrailing-withContainer"/>
                                     <constraint firstItem="btnSwitch" firstAttribute="top" secondItem="btnEditText" secondAttribute="bottom" id="btnSwitch-below-btnEditText" userLabel="btnSwitch-below-btnEditText"/>
-                                    <constraint firstItem="btnSwitch" firstAttribute="leading" secondItem="RC-ID-1038" secondAttribute="leading" id="btnSwitch-matchLeading-RC-ID-1038" userLabel="btnSwitch-matchLeading-RC-ID-1038"/>
-                                    <constraint firstItem="btnTextView" firstAttribute="trailing" secondItem="RC-ID-1038" secondAttribute="trailing" id="btnTextView-alignTrailing-withContainer" userLabel="btnTextView-alignTrailing-withContainer"/>
+                                    <constraint firstItem="btnSwitch" firstAttribute="leading" secondItem="RC-ID-1047" secondAttribute="leading" id="btnSwitch-matchLeading-RC-ID-1047" userLabel="btnSwitch-matchLeading-RC-ID-1047"/>
+                                    <constraint firstItem="btnTextView" firstAttribute="trailing" secondItem="RC-ID-1047" secondAttribute="trailing" id="btnTextView-alignTrailing-withContainer" userLabel="btnTextView-alignTrailing-withContainer"/>
                                     <constraint firstItem="btnTextView" firstAttribute="top" secondItem="btnButton" secondAttribute="bottom" id="btnTextView-below-btnButton" userLabel="btnTextView-below-btnButton"/>
-                                    <constraint firstItem="btnTextView" firstAttribute="leading" secondItem="RC-ID-1038" secondAttribute="leading" id="btnTextView-matchLeading-RC-ID-1038" userLabel="btnTextView-matchLeading-RC-ID-1038"/>
-                                    <constraint firstItem="textView" firstAttribute="top" secondItem="RC-ID-1038" secondAttribute="top" id="textView-alignTop-withContainer" userLabel="textView-alignTop-withContainer"/>
-                                    <constraint firstItem="textView" firstAttribute="leading" secondItem="RC-ID-1038" secondAttribute="leading" id="textView-leading-RC-ID-1038" userLabel="textView-leading-RC-ID-1038"/>
-                                    <constraint firstItem="textView" firstAttribute="trailing" secondItem="RC-ID-1038" secondAttribute="trailing" id="textView-matchTrailing-RC-ID-1038" userLabel="textView-matchTrailing-RC-ID-1038"/>
+                                    <constraint firstItem="btnTextView" firstAttribute="leading" secondItem="RC-ID-1047" secondAttribute="leading" id="btnTextView-matchLeading-RC-ID-1047" userLabel="btnTextView-matchLeading-RC-ID-1047"/>
+                                    <constraint firstItem="textView" firstAttribute="top" secondItem="RC-ID-1047" secondAttribute="top" id="textView-alignTop-withContainer" userLabel="textView-alignTop-withContainer"/>
+                                    <constraint firstItem="textView" firstAttribute="leading" secondItem="RC-ID-1047" secondAttribute="leading" id="textView-leading-RC-ID-1047" userLabel="textView-leading-RC-ID-1047"/>
+                                    <constraint firstItem="textView" firstAttribute="trailing" secondItem="RC-ID-1047" secondAttribute="trailing" id="textView-matchTrailing-RC-ID-1047" userLabel="textView-matchTrailing-RC-ID-1047"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
+                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="RC-ID-1038" firstAttribute="leading" secondItem="MainActivity-View-safeArea" secondAttribute="leading" id="RC-ID-1038-matchLeading-MainActivity-View-safeArea" userLabel="RC-ID-1038-matchLeading-MainActivity-View-safeArea"/>
-                            <constraint firstItem="RC-ID-1038" firstAttribute="top" secondItem="MainActivity-View-safeArea" secondAttribute="top" id="RC-ID-1038-matchTop-MainActivity-View-safeArea" userLabel="RC-ID-1038-matchTop-MainActivity-View-safeArea"/>
-                            <constraint firstItem="RC-ID-1038" firstAttribute="trailing" secondItem="MainActivity-View-safeArea" secondAttribute="trailing" id="RC-ID-1038-matchTrailing-MainActivity-View-safeArea" userLabel="RC-ID-1038-matchTrailing-MainActivity-View-safeArea"/>
-                            <constraint firstItem="MainActivity-View-safeArea" firstAttribute="bottom" secondItem="RC-ID-1038" secondAttribute="bottom" id="bZh-ak-RvY"/>
+                            <constraint firstItem="RC-ID-1047" firstAttribute="leading" secondItem="MainActivity-View-safeArea" secondAttribute="leading" id="RC-ID-1047-matchLeading-MainActivity-View-safeArea" userLabel="RC-ID-1047-matchLeading-MainActivity-View-safeArea"/>
+                            <constraint firstItem="RC-ID-1047" firstAttribute="top" secondItem="MainActivity-View-safeArea" secondAttribute="top" id="RC-ID-1047-matchTop-MainActivity-View-safeArea" userLabel="RC-ID-1047-matchTop-MainActivity-View-safeArea"/>
+                            <constraint firstItem="RC-ID-1047" firstAttribute="trailing" secondItem="MainActivity-View-safeArea" secondAttribute="trailing" id="RC-ID-1047-matchTrailing-MainActivity-View-safeArea" userLabel="RC-ID-1047-matchTrailing-MainActivity-View-safeArea"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="MainActivity-View-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="MainActivity-View-safeArea" secondAttribute="leading" id="footer-match-leading"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="RC-ID-1047" secondAttribute="bottom" id="footer-match-top-RC-ID-1047" userLabel="footer-match-top-RC-ID-1047"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="MainActivity-View-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MainActivity-View-safeArea"/>
                     </view>

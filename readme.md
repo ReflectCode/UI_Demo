@@ -22,12 +22,13 @@
 This project demonstrate the porting of various widgets and controls used in Android project.
 This repository contains the Android source code which was used as input and generated iOS source code project.
 
-* New Additions - Switch, ImageButton, ToggleButton
+* New Additions - android.support.v7.widget.CardView, Switch, ImageButton, ToggleButton
 
 Following UI Widgets are supported - 
 
 | Widgets | Features |
 |---------|------------|
+| CardView | cardCornerRadius, cardElevation, cardBackgroundColor, contentPadding |
 | Switch | Thumb image, Thumb tint, Shadow Color, Track image, Switch Width, Switch Padding, Enabled, Background |
 | ImageButton | Source image, Background |
 | ToggleButton | Implementation is pending, UILabel is used as substitute |
@@ -40,6 +41,7 @@ Following UI Widgets are supported -
 ## Statement Estimation
 | File | Statement |
 |---------|------------|
+| card_view.xml | 229 | 
 | switch_page.xml | 449 |
 | main_page.xml | 204 |
 | button.xml | 700 |
@@ -49,11 +51,21 @@ Following UI Widgets are supported -
 | strings.xml | 1 |
 | AppIcon | 50 |
 | XCode Project | 445 |
-| **Total** | **2817** |
+| **Total** | **3046** |
 
 -----
 
 ## Screen shots
+
+Screen shot of CardView - 
+<img src="/Visuals/UI-Demo_CardView.jpg" alt="CardView Screenshot"/>
+
+### Dev Notes
+* CardView is implemented by using the following open source code
+* Original code : CardView, A simple UIView subclass with rounded corners and a drop shadow
+* Credit to : https://github.com/aclissold/CardView
+
+-----
 
 Screen shot of Switch, ImageButton, ToggleButton - 
 <img src="/Visuals/UI-Demo_Switch.jpg" alt="Switch Screenshot"/>

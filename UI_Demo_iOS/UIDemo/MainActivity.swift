@@ -48,6 +48,10 @@ public class MainActivity : UIViewController {
         self.navigationController?.pushViewController(intent_VC, animated: true)
     }
 
+    @IBAction func CardViewClick(_ v: UIView?){
+        var intent_VC = UIStoryboard(name: "card_view", bundle: nil).instantiateViewController(withIdentifier: "CardViewActivity-VC") as! CardViewActivity
+        self.navigationController?.pushViewController(intent_VC, animated: true)
+    }
 
     override public func viewDidLoad(){
         super.viewDidLoad()
